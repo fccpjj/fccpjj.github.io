@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | 蓝桉</title>
+  <title>循环语句 | 蓝桉</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="Python、爬虫、web开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蓝桉">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="通过一些实例来说明for 变量 in 集合、for i range(循环：）用法 for循环输出0-100的偶数和、奇数和、计算从1加到100的值并输出等1234567891011121314151617181920212223242526272829303132333435363738394041sum=0for i in range(1,100,2):    sum=i+sumprint(su">
+<meta name="keywords" content="Python、爬虫、web开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="循环语句">
+<meta property="og:url" content="http://yoursite.com/2018/07/12/fighting3/index.html">
 <meta property="og:site_name" content="蓝桉">
+<meta property="og:description" content="通过一些实例来说明for 变量 in 集合、for i range(循环：）用法 for循环输出0-100的偶数和、奇数和、计算从1加到100的值并输出等1234567891011121314151617181920212223242526272829303132333435363738394041sum=0for i in range(1,100,2):    sum=i+sumprint(su">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-13T01:14:15.728Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蓝桉">
+<meta name="twitter:title" content="循环语句">
+<meta name="twitter:description" content="通过一些实例来说明for 变量 in 集合、for i range(循环：）用法 for循环输出0-100的偶数和、奇数和、计算从1加到100的值并输出等1234567891011121314151617181920212223242526272829303132333435363738394041sum=0for i in range(1,100,2):    sum=i+sumprint(su">
   
     <link rel="alternative" href="/atom.xml" title="蓝桉" type="application/atom+xml">
   
@@ -157,157 +161,162 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-fighting3" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      循环语句
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/fighting3/" class="archive-article-date">
+
+        
+        <a href="/2018/07/12/fighting3/" class="archive-article-date">
   	<time datetime="2018-07-12T05:46:02.105Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/fighting3/">循环语句</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>通过一些实例来说明for 变量 in 集合、for i range(循环：）用法</p>
+<h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><h3 id="输出0-100的偶数和、奇数和、计算从1加到100的值并输出等"><a href="#输出0-100的偶数和、奇数和、计算从1加到100的值并输出等" class="headerlink" title="输出0-100的偶数和、奇数和、计算从1加到100的值并输出等"></a>输出0-100的偶数和、奇数和、计算从1加到100的值并输出等</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,100,2):</span><br><span class="line">    sum=i+sum</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line">0-100所有奇数之和</span><br><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,100,2):</span><br><span class="line">    sum=i+sum</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"></span><br><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,101):</span><br><span class="line">    sum=i+sum</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line">使用<span class="keyword">while</span>循环输入 1 2 3 4 5 6 8 9 10</span><br><span class="line">i = 1</span><br><span class="line"><span class="keyword">while</span> i&lt;=10:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line">    i=i+1</span><br><span class="line"></span><br><span class="line">求1-100的所有数的和</span><br><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,101):</span><br><span class="line">    sum=i+sum</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line">    3、输出 1-100 内的所有奇数</span><br><span class="line">i=1</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,100,2):</span><br><span class="line">	<span class="built_in">print</span>(i,end=<span class="string">' '</span>)</span><br><span class="line"></span><br><span class="line">输出 1-100 内的所有偶数</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(2,101,2):</span><br><span class="line">	<span class="built_in">print</span>(i,end=<span class="string">' '</span>)</span><br><span class="line"></span><br><span class="line">求1-2+3-4+5 ... 99的所有数的和</span><br><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,100):</span><br><span class="line">    <span class="keyword">if</span> i%2==0:</span><br><span class="line">        i=-i</span><br><span class="line">    sum=sum+i</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br></pre></td></tr></table></figure>
+<h3 id="Play1-（扩充）"><a href="#Play1-（扩充）" class="headerlink" title="Play1 （扩充）"></a>Play1 （扩充）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">计算10的阶乘（1x2x3x4x5x6x7x8x9x10）</span><br><span class="line">j=1</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">    j=j*i</span><br><span class="line"><span class="built_in">print</span>(j)</span><br><span class="line">求0-100阶乘之和</span><br><span class="line">sum=0 </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,101):</span><br><span class="line">    multip=1</span><br><span class="line">    <span class="keyword">for</span> f <span class="keyword">in</span> range(1,i+1):</span><br><span class="line">        multip=multip*f</span><br><span class="line">    sum=sum+multip</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line">multip=1</span><br><span class="line">sum=0 </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,101):</span><br><span class="line">    multip=multip*i</span><br><span class="line">    sum+=multip</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"></span><br><span class="line">求0-100奇数阶乘之和</span><br><span class="line"></span><br><span class="line">sum=0 </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,101,2):</span><br><span class="line">    multip=1</span><br><span class="line">    <span class="keyword">for</span> f <span class="keyword">in</span> range(1,i+1):</span><br><span class="line">        multip=multip*f</span><br><span class="line">        sum=sum+multip</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">sum=0 </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,101):</span><br><span class="line">    <span class="keyword">if</span> i%2!=0:</span><br><span class="line">        multip=1</span><br><span class="line">        <span class="keyword">for</span> f <span class="keyword">in</span> range(1,i+1):</span><br><span class="line">            multip=multip*f</span><br><span class="line">            sum=sum+multip</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line">计算2的20次方。不允许用**和pow()</span><br><span class="line">i=1</span><br><span class="line">j=1</span><br><span class="line"><span class="keyword">while</span> i&lt;=20:</span><br><span class="line">    j=j*2</span><br><span class="line">    i=i+1</span><br><span class="line"><span class="built_in">print</span>(j)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">计算从1到1000以内所有奇数的和并输出。</span><br><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,1001,2):</span><br><span class="line">    sum=i+sum</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line">re info: [Server](https://hexo.io/docs/server.html)</span><br></pre></td></tr></table></figure>
+<h3 id="Play2"><a href="#Play2" class="headerlink" title="Play2"></a>Play2</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">写代码：计算 1 - 2 + 3 ... + 99 中除了88以外所有数的总和？</span><br><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,100):</span><br><span class="line">    <span class="keyword">if</span> i%2==0:</span><br><span class="line">        <span class="keyword">if</span> i==88:</span><br><span class="line">           i=0</span><br><span class="line">        i=-i   </span><br><span class="line">    sum=sum+i</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line">计算从1到1000以内所有能被3或者17整除的数的和并输出</span><br><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,1001):</span><br><span class="line">    <span class="keyword">if</span> i%3==0 or i%17==0:</span><br><span class="line">       sum=sum+i</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"></span><br><span class="line">计算从1到1000以内所有能同时被3，5和7整除的数的和并输出 </span><br><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,1001):</span><br><span class="line">    <span class="keyword">if</span> i%3==0 and i%5==0 and i%7==0:</span><br><span class="line">       sum=sum+i</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"></span><br><span class="line">计算1到100以内能被7或者3整除但不能同时被这两者整除的数的个数。</span><br><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,101):</span><br><span class="line">    <span class="keyword">if</span> (i%3==0 or i%7==0) and not(i%3==0 and i%7==0):</span><br><span class="line">       sum=sum+1</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"></span><br><span class="line">计算1到100以内能被7整除但不是偶数的数的个数。</span><br><span class="line">sum=0</span><br><span class="line">i=0</span><br><span class="line"><span class="keyword">while</span> i&lt;=100:</span><br><span class="line">    <span class="keyword">if</span> i%7==0 and i%2 !=0:</span><br><span class="line">       sum=sum+1</span><br><span class="line">       i =i +1</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"></span><br><span class="line">给定一个整数n，判断是否是质数（质数是只能被1和它自身整除的数）</span><br><span class="line">n=int(input(<span class="string">'请输入一个数：'</span>))</span><br><span class="line">i=1</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(2,n):</span><br><span class="line">    <span class="keyword">if</span> n%i==0:</span><br><span class="line">       <span class="built_in">print</span>(<span class="string">'不是质数'</span>)</span><br><span class="line">       <span class="built_in">exit</span>()</span><br><span class="line">       i=i+1</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'该数是质数'</span>)</span><br><span class="line">n=int(input(<span class="string">'请输入一个数：'</span>))</span><br><span class="line">k=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,n):</span><br><span class="line">    <span class="keyword">if</span> n%i==0 and i!=1:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'不是质数'</span>)</span><br><span class="line">        k=1</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line"><span class="keyword">if</span> k==0:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'该数是质数'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">n=int(input(<span class="string">'请输入一个数：'</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(2,n):</span><br><span class="line">    <span class="keyword">if</span> n % i == 0:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'不是质数'</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'是质数'</span>)</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">等待用户输入内容，检测用户输入内容中是否包含敏感字符？如果存在敏感字符提示“存在敏感字符请重新输入”，并允许用户重新输入并打印。敏感字符：“苍老师”、“嘻哈”</span><br><span class="line">sensitive_words=<span class="string">'今天我吃了很多水果'</span></span><br><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    aaa=input(<span class="string">'发布内容请输入：I;退出请输入:E'</span>)</span><br><span class="line">    <span class="keyword">if</span> aaa==<span class="string">'I'</span>:</span><br><span class="line">        content=input(<span class="string">'请输入内容:'</span>)</span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> sensitive_words:</span><br><span class="line">            <span class="keyword">if</span> item <span class="keyword">in</span> content:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'你输入的内容有敏感词，请重新输入:'</span>)</span><br><span class="line">                <span class="built_in">break</span></span><br><span class="line">        <span class="built_in">print</span>(content)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'拜拜！'</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">制作趣味模板程序需求：等待用户输入名字、地点、爱好，根据用户的名字和爱好进行任意现实 如：敬爱可亲的xxx，最喜欢在xxx地方干xxxuser_name=input(<span class="string">'请输入用户名字'</span>)</span><br><span class="line">place=input(<span class="string">'请输入地点'</span>)</span><br><span class="line">hobby=input(<span class="string">'用户爱好是：'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'我的小伙伴&#123;0&#125;经常回会在&#123;1&#125;&#123;2&#125;'</span>.format(user_name,place,hobby))</span><br><span class="line">用户登录：</span><br><span class="line">count=2</span><br><span class="line"><span class="keyword">while</span> count&lt;=2:</span><br><span class="line">    username=input(<span class="string">'请输入用户名'</span>)</span><br><span class="line">    password=input(<span class="string">'请输入密码'</span>)</span><br><span class="line">    <span class="keyword">if</span> username==<span class="string">'fcc'</span> and password==<span class="string">'12345'</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'欢迎回来！'</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> count&gt;0:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'用户名密码不正确！你还有&#123;0&#125;次机会'</span>.format(count))</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'三次机会已经用完：请重设密码'</span>)</span><br><span class="line">            <span class="built_in">break</span></span><br><span class="line">    count=count-1</span><br></pre></td></tr></table></figure>
+<h3 id="游戏角色攻击boss"><a href="#游戏角色攻击boss" class="headerlink" title="游戏角色攻击boss"></a>游戏角色攻击boss</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/12/fighting3/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/fighting2/" class="archive-article-date">
-  	<time datetime="2018-07-12T05:36:14.919Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/12/fighting2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">条件语句</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/fighting2/">条件语句</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/fighting1/" class="archive-article-date">
-  	<time datetime="2018-07-12T04:56:37.304Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/fighting1/">字符串</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/11/fighting/" class="archive-article-date">
-  	<time datetime="2018-07-11T14:17:10.502Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/11/fighting/">基础语法</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/09/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-09T12:19:21.439Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -330,8 +339,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
