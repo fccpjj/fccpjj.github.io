@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 蓝桉</title>
+  <title>函数嵌套、闭包、高阶函数（匿名函数） | 蓝桉</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="Python、爬虫、web开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蓝桉">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="function！！！函数嵌套1234567891011121314151617181920212223242526根据Python中，对函数的载入和调用特点。我们可以清楚看到，当Python运行相关文件时，如果遇到函数时，会先将其名字载入到内存中（即为函数名指定一个内存地址）。因此我们在使用函数名时，可以有以下三种情况：1）将函数名赋值给变量例如：def f1():   print(&apos;ok&apos;)a">
+<meta name="keywords" content="Python、爬虫、web开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="函数嵌套、闭包、高阶函数（匿名函数）">
+<meta property="og:url" content="http://yoursite.com/2018/07/25/fighting11/index.html">
 <meta property="og:site_name" content="蓝桉">
+<meta property="og:description" content="function！！！函数嵌套1234567891011121314151617181920212223242526根据Python中，对函数的载入和调用特点。我们可以清楚看到，当Python运行相关文件时，如果遇到函数时，会先将其名字载入到内存中（即为函数名指定一个内存地址）。因此我们在使用函数名时，可以有以下三种情况：1）将函数名赋值给变量例如：def f1():   print(&apos;ok&apos;)a">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-25T12:37:00.577Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蓝桉">
+<meta name="twitter:title" content="函数嵌套、闭包、高阶函数（匿名函数）">
+<meta name="twitter:description" content="function！！！函数嵌套1234567891011121314151617181920212223242526根据Python中，对函数的载入和调用特点。我们可以清楚看到，当Python运行相关文件时，如果遇到函数时，会先将其名字载入到内存中（即为函数名指定一个内存地址）。因此我们在使用函数名时，可以有以下三种情况：1）将函数名赋值给变量例如：def f1():   print(&apos;ok&apos;)a">
   
     <link rel="alternative" href="/atom.xml" title="蓝桉" type="application/atom+xml">
   
@@ -157,289 +161,158 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-fighting11" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      函数嵌套、闭包、高阶函数（匿名函数）
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/25/fighting11/" class="archive-article-date">
+
+        
+        <a href="/2018/07/25/fighting11/" class="archive-article-date">
   	<time datetime="2018-07-25T12:10:58.137Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-25</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/25/fighting11/">函数嵌套、闭包、高阶函数（匿名函数）</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="function！！！"><a href="#function！！！" class="headerlink" title="function！！！"></a>function！！！</h2><h3 id="函数嵌套"><a href="#函数嵌套" class="headerlink" title="函数嵌套"></a>函数嵌套</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">根据Python中，对函数的载入和调用特点。我们可以清楚看到，当Python运行相关文件时，如果遇到函数时，会先将其名字载入到内存中（即为函数名指定一个内存地址）。因此我们在使用函数名时，可以有以下三种情况：</span><br><span class="line">1）将函数名赋值给变量</span><br><span class="line">例如：</span><br><span class="line">def f1():</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">'ok'</span>)</span><br><span class="line"></span><br><span class="line">a = f1</span><br><span class="line">这是变量a中的值就是f1()函数名的内存地址。</span><br><span class="line">2）将函数名作为容器的元素</span><br><span class="line">def f1():</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">'ok'</span>)</span><br><span class="line">ls = [1,2,f1]</span><br><span class="line">注意，此时存入到列表ls中的f1，它的值仍然是该函数名对应的内存地址</span><br><span class="line">3）将函数名作为另外一个函数的参数，进行传递</span><br><span class="line">def f1():</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">'ok'</span>)</span><br><span class="line"></span><br><span class="line">def f2(x):</span><br><span class="line">   x()</span><br><span class="line">f2(f1)</span><br><span class="line">其执行结果为OK，这种方式类似与函数的普通嵌套,代码如下：</span><br><span class="line">def f2():</span><br><span class="line">   def f1():</span><br><span class="line">      <span class="built_in">print</span>(<span class="string">'ok'</span>)</span><br><span class="line">   f1()</span><br><span class="line">f2()</span><br></pre></td></tr></table></figure>
+<h3 id="函数闭包"><a href="#函数闭包" class="headerlink" title="函数闭包"></a>函数闭包</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line">1）闭包格式</span><br><span class="line"></span><br><span class="line">def outer():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'我是外部函数'</span>)</span><br><span class="line">    def inner():</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'我是闭包函数'</span>)</span><br><span class="line">    <span class="built_in">return</span> inner</span><br><span class="line"></span><br><span class="line">f = outer()</span><br><span class="line">f()</span><br><span class="line"></span><br><span class="line">def outer():</span><br><span class="line"><span class="comment">#     print('我是外部函数')</span></span><br><span class="line"><span class="comment">#     def inner():</span></span><br><span class="line"><span class="comment">#         print('我是闭包函数')</span></span><br><span class="line"><span class="comment">#     # inner()    嵌套</span></span><br><span class="line"><span class="comment">#     return inner  #闭包</span></span><br><span class="line"><span class="comment"># f =outer()</span></span><br><span class="line"><span class="comment"># f()    </span></span><br><span class="line"></span><br><span class="line">def f1():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'hello world!'</span>)</span><br><span class="line">    name=<span class="string">'tom'</span></span><br><span class="line">    def f2():</span><br><span class="line">        <span class="built_in">print</span>(name)</span><br><span class="line">    <span class="built_in">print</span>(f2.__closure__)    </span><br><span class="line">    <span class="built_in">return</span> f2    </span><br><span class="line">    <span class="comment"># f2()</span></span><br><span class="line">f=f1()</span><br><span class="line">f()    </span><br><span class="line"></span><br><span class="line">name=<span class="string">'tom'</span></span><br><span class="line">def func():</span><br><span class="line">    def inner():</span><br><span class="line">        <span class="built_in">print</span>(name)</span><br><span class="line">    <span class="built_in">print</span>(inner.__closure__)</span><br><span class="line">    <span class="built_in">return</span> inner</span><br><span class="line">f2=func()</span><br><span class="line">f2()    </span><br><span class="line"></span><br><span class="line">def outer(x):</span><br><span class="line">    def inner(y):</span><br><span class="line">        nonlocal x</span><br><span class="line">        x+=y</span><br><span class="line">        <span class="built_in">return</span> x</span><br><span class="line">    <span class="built_in">return</span> inner</span><br><span class="line">a=outer(10)</span><br><span class="line"><span class="built_in">print</span>(a(1))</span><br><span class="line"><span class="built_in">print</span>(a(3))   </span><br><span class="line">通过对例子的观察，我们发现闭包函数的写法有如下特点：</span><br><span class="line">1、闭包函数作为内部函数，嵌套在外部函数中</span><br><span class="line">2、闭包函数会作为外部函数的返回值，进行返回。返回闭包函数时，只返回函数名，不带括号。</span><br><span class="line">3、外部调用时，首先要执行外部函数，然后将结果赋值给一个变量，此时该变量对应了闭包函数。</span><br><span class="line">4、我们可以通过__closure__内部函数可以观察到，闭包函数的存在。前提是，闭包函数要与外部函数进行数据传递或调用。</span><br><span class="line">总结：闭包使用的数据，必须是本身定义或外部函数中定义的相关变量，通常需要调用外部函数的数据，形成一个封闭的函数结构。不能与外部数据（全局变量）发生交流。</span><br><span class="line">2）闭包的应用—装饰器</span><br><span class="line">1、概念：装饰器本身仍然是一个函数。是我们队闭包应用的一种具体实现。</span><br><span class="line">2、作用：装饰器可以在不改变函数本身功能的情况下，为函数添加额外的功能。诸如：日志、测试、性能检测等。装饰器同样也是返回一个函数对象。</span><br><span class="line">3、用法：</span><br><span class="line">使用格式：@+装饰器名称</span><br><span class="line"></span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">def outer(f):</span><br><span class="line">    def inner(*var):</span><br><span class="line">        start_time = time.time()</span><br><span class="line">        f(*var)</span><br><span class="line">        time.sleep(0.3)</span><br><span class="line">        end_time = time.time()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'此函数执行时间为&#123;0&#125;'</span>.format(str(end_time-start_time)))</span><br><span class="line">    <span class="built_in">return</span> inner</span><br><span class="line"></span><br><span class="line">@timer   <span class="comment"># 此处就是装饰器的声明，这种方法我们成为语法糖</span></span><br><span class="line">def func1():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'hello world'</span>) </span><br><span class="line">    </span><br><span class="line">@timer      </span><br><span class="line">def func2(string):</span><br><span class="line">    <span class="built_in">print</span>(string)   </span><br><span class="line">@timer      </span><br><span class="line">def func3(a,b):</span><br><span class="line">    <span class="built_in">print</span>(a,b)      </span><br><span class="line">func1()            </span><br><span class="line">func2(<span class="string">'welcome to zhengzhou'</span>)</span><br><span class="line">func3(<span class="string">'今天'</span>,<span class="string">'天热!'</span>) </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">日志函数</span><br><span class="line"><span class="comment">#debug 做调试</span></span><br><span class="line"><span class="comment"># info常用 操作 warning 警告  error错误 fatal挂了</span></span><br><span class="line">import logging</span><br><span class="line"><span class="comment">#创建日志对象 并设置日志级别</span></span><br><span class="line">logger=logging.getLogger(<span class="string">'pythonlogger'</span>)</span><br><span class="line">logger.setLevel(logging.INFO)</span><br><span class="line"><span class="comment">#创建一个handler,用来将g日志存入文件中</span></span><br><span class="line">file=logging.FileHandler(<span class="string">'test.log'</span>)</span><br><span class="line">file.setLevel(logging.INFO)</span><br><span class="line"><span class="comment">#创建一个handler,用来将日志输出到控制台</span></span><br><span class="line">console=logging.StreamHandler()</span><br><span class="line">console.setLevel(logging.INFO)</span><br><span class="line"><span class="comment">#定义日志输出格式</span></span><br><span class="line">formatter=logging.Formatter(<span class="string">'%(asctime)s - %(name)s -%(levelname)s-%(message)s'</span>)</span><br><span class="line">file.setFormatter(formatter)</span><br><span class="line">console.setFormatter(formatter)</span><br><span class="line"><span class="comment">#将logger添加到handler</span></span><br><span class="line">logger.addHandler(file)</span><br><span class="line">logger.addHandler(console)</span><br><span class="line">logger.info(<span class="string">'我是一条日志信息'</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="高阶函数（匿名函数）"><a href="#高阶函数（匿名函数）" class="headerlink" title="高阶函数（匿名函数）"></a>高阶函数（匿名函数）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">使用lambda关键字进行修饰，没有显式声明函数的名字。格式如下：</span><br><span class="line">lambda 参数：表达式（返回值）</span><br><span class="line">注意，在使用匿名函数时，因为其自身的情况限制，匿名函数并不能执行比较复杂的业务逻辑，即函数内的代码不能过多。lambda本身是一个表达式</span><br><span class="line"></span><br><span class="line">def show():</span><br><span class="line">    <span class="built_in">return</span> x**3</span><br><span class="line">a=lambda x:x**3</span><br><span class="line"><span class="built_in">print</span>(a(2))    </span><br><span class="line"></span><br><span class="line">def show(a,b,c):</span><br><span class="line">    max=0</span><br><span class="line">    <span class="keyword">if</span> a&gt;b and a&gt;c:</span><br><span class="line">        max=a</span><br><span class="line">    <span class="keyword">elif</span> b&gt;a and b&gt;c:</span><br><span class="line">        max=b</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        max=c</span><br><span class="line">    <span class="built_in">return</span> max </span><br><span class="line"><span class="comment"># print(show(4,23,78))           </span></span><br><span class="line">max=lambda a,b,c:show(a,b,c)</span><br><span class="line"><span class="built_in">print</span>(max(4,23,2))</span><br></pre></td></tr></table></figure>
+<h3 id="药品进销存函数日志版-和-登录注册改密函数版"><a href="#药品进销存函数日志版-和-登录注册改密函数版" class="headerlink" title="药品进销存函数日志版   和 登录注册改密函数版"></a>药品进销存函数日志版   和 登录注册改密函数版</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br></pre></td><td class="code"><pre><span class="line">import logging</span><br><span class="line"></span><br><span class="line"><span class="comment">#用户身份字典，用来存储用户名和密码</span></span><br><span class="line">user=&#123;</span><br><span class="line">    <span class="string">'tom'</span>:<span class="string">'12345'</span>,</span><br><span class="line">    <span class="string">'jack'</span>:<span class="string">'3454'</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">#定义一个采购的空字典</span></span><br><span class="line">buy_dic=&#123;&#125;</span><br><span class="line">stock_dic=&#123;&#125;</span><br><span class="line">sale_dic=&#123;&#125;</span><br><span class="line"><span class="comment">#菜单项：供程序调用</span></span><br><span class="line">def menu():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'*'</span>*30)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'1、登录药品进销存平台！'</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'2、采购药品'</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'3、库存药品'</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'4、销售药品'</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'5、药品统计'</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'6、退出'</span>)</span><br><span class="line">def <span class="built_in">log</span>(msg):</span><br><span class="line">    <span class="comment">#创建日志对象 并设置日志级别</span></span><br><span class="line">    logger=logging.getLogger(<span class="string">'pythonlogger'</span>)</span><br><span class="line">    logger.setLevel(logging.INFO)</span><br><span class="line">    <span class="comment">#创建一个handler,用来将g日志存入文件中</span></span><br><span class="line">    file=logging.FileHandler(<span class="string">'test.log'</span>)</span><br><span class="line">    file.setLevel(logging.INFO)</span><br><span class="line">    <span class="comment">#创建一个handler,用来将日志输出到控制台</span></span><br><span class="line">    console=logging.StreamHandler()</span><br><span class="line">    console.setLevel(logging.INFO)</span><br><span class="line">    <span class="comment">#定义日志输出格式</span></span><br><span class="line">    formatter=logging.Formatter(<span class="string">'%(asctime)s - %(name)s -%(levelname)s-%(message)s'</span>)</span><br><span class="line">    file.setFormatter(formatter)</span><br><span class="line">    console.setFormatter(formatter)</span><br><span class="line">    <span class="comment">#将logger添加到handler</span></span><br><span class="line">    logger.addHandler(file)</span><br><span class="line">    logger.addHandler(console)</span><br><span class="line">    logger.info(msg)</span><br><span class="line">    logger.removeHandler(file)</span><br><span class="line">    logger.removeHandler(console)</span><br><span class="line">def mylogger(f):</span><br><span class="line">    def inner(*var,**kw):</span><br><span class="line">        <span class="keyword">if</span> f(*var,**kw):</span><br><span class="line">            <span class="built_in">log</span>(f.__name__+<span class="string">'操作成功！'</span>)    </span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">log</span>(f.__name__+<span class="string">'操作失败'</span>) </span><br><span class="line">    <span class="built_in">return</span> inner</span><br><span class="line">    </span><br><span class="line"><span class="comment">#function:登录功能</span></span><br><span class="line"><span class="comment"># parameter：username（用户名），password(密码)</span></span><br><span class="line"><span class="comment"># return:True or  False</span></span><br><span class="line"><span class="comment">#description:传递参数:用户名与密码:验证用户名与密码是否正确，如果正确返回True,错误返回False</span></span><br><span class="line"><span class="comment">#登录功能，需要验证用户的用户名和密码</span></span><br><span class="line">@mylogger</span><br><span class="line">def login(username,password):</span><br><span class="line">    flag=False</span><br><span class="line">    <span class="keyword">if</span> username <span class="keyword">in</span> user.keys():</span><br><span class="line">        flag=(password==user[username])</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        flag=False</span><br><span class="line">    <span class="built_in">return</span> flag        </span><br><span class="line"><span class="comment"># function：采购药品</span></span><br><span class="line"><span class="comment"># parameter：medical_name,m_no,msg，price,buyer,catalog,buy_time</span></span><br><span class="line"><span class="comment"># return:采购的字典</span></span><br><span class="line"><span class="comment"># description:根据传入的药品参数，存ru指定的药品采购字典中</span></span><br><span class="line">@mylogger</span><br><span class="line">def buy(buy_time,**kw):</span><br><span class="line">    flag=True</span><br><span class="line">    buy_dic[buy_time]=kw</span><br><span class="line">    <span class="built_in">return</span> flag</span><br><span class="line">   </span><br><span class="line"><span class="comment"># function:查询指定字典内容</span></span><br><span class="line"><span class="comment"># parameter：dic</span></span><br><span class="line"><span class="comment"># return:None</span></span><br><span class="line"><span class="comment"># description:根据传入的字典参数，对其进行遍历</span></span><br><span class="line"></span><br><span class="line">def findall(dic):</span><br><span class="line">    <span class="built_in">print</span>(dic)  </span><br><span class="line"><span class="comment"># function：药品入库功能</span></span><br><span class="line"><span class="comment"># parameter：m_name,m_no,msg,price,stoker,catalog,stock_time,buy_time  </span></span><br><span class="line"><span class="comment"># return None</span></span><br><span class="line"><span class="comment"># description:根据采购的时间，进行查询采购的对应记录，如果存在进行入库操作      </span></span><br><span class="line">@mylogger</span><br><span class="line">def stock(buy_time, stock_time,stocker,**kw):</span><br><span class="line">    flag=False</span><br><span class="line">    <span class="keyword">if</span> buy_time <span class="keyword">in</span> buy_dic.keys():</span><br><span class="line">        kw=buy_dic[buy_time].copy()</span><br><span class="line">        del kw[<span class="string">'buyer'</span>]</span><br><span class="line">        m_no=kw.pop(<span class="string">'m_no'</span>)</span><br><span class="line">        kw[<span class="string">'stocker'</span>]=stocker</span><br><span class="line">        kw[<span class="string">'stock_time'</span>]=stock_time</span><br><span class="line">        stock_dic[m_no]=kw</span><br><span class="line">        flag=True</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'输入的采购时间有误！'</span>)</span><br><span class="line">        flag=False</span><br><span class="line">    <span class="built_in">return</span> flag</span><br><span class="line">@mylogger    </span><br><span class="line">def sale(sale_time,sum_price,num,saler,**kw):</span><br><span class="line">    flag=False</span><br><span class="line">    <span class="keyword">if</span> m_no <span class="keyword">in</span> stock_dic.keys():</span><br><span class="line">        kw=stock_dic[m_no].copy()</span><br><span class="line">        del kw[<span class="string">'stocker'</span>]</span><br><span class="line">        del kw[<span class="string">'stock_time'</span>]</span><br><span class="line">        kw[<span class="string">'saler'</span>]=saler</span><br><span class="line">        kw[<span class="string">'sale_time'</span>]=sale_time</span><br><span class="line">        kw[<span class="string">'num'</span>]=num</span><br><span class="line">        sale_dic[m_no]=kw</span><br><span class="line">        <span class="keyword">if</span> num&lt;stock_dic[m_no][<span class="string">'num'</span>]:</span><br><span class="line">            sum_price=num*stock_dic[m_no][<span class="string">'price'</span>]</span><br><span class="line">            kw[<span class="string">'sum_price'</span>]=sum_price</span><br><span class="line">            flag=True</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'输入的销售数量有误！'</span>)</span><br><span class="line">            flag=False    </span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'输入的入库时间有误！'</span>)</span><br><span class="line">        flag=False</span><br><span class="line">    <span class="built_in">return</span> flag        </span><br><span class="line">def count(m_name):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> buy_dic.keys():</span><br><span class="line">        <span class="keyword">if</span> m_name <span class="keyword">in</span> buy_dic[i][<span class="string">'m_name'</span>]:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'&#123;&#125;购入数量为&#123;&#125;，购入人为：&#123;&#125;'</span>.format(m_name,buy_dic[i][<span class="string">'num'</span>],buy_dic[i][<span class="string">'buyer'</span>]))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> stock_dic.keys():</span><br><span class="line">        <span class="keyword">if</span> m_name <span class="keyword">in</span> stock_dic[i][<span class="string">'m_name'</span>]:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'&#123;&#125;入库数量为&#123;&#125;，库存者为：&#123;&#125;'</span>.format(m_name,stock_dic[i][<span class="string">'num'</span>],stock_dic[i][<span class="string">'stocker'</span>]))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> sale_dic.keys():</span><br><span class="line">        <span class="keyword">if</span> m_name <span class="keyword">in</span> sale_dic[i][<span class="string">'m_name'</span>]:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'&#123;&#125;销售数量为&#123;&#125;，销售员为：&#123;&#125;'</span>.format(m_name,sale_dic[i][<span class="string">'num'</span>],sale_dic[i][<span class="string">'saler'</span>]))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># function:退出功能</span></span><br><span class="line"><span class="comment"># parameter：none</span></span><br><span class="line"><span class="comment"># return：none</span></span><br><span class="line"><span class="comment"># description:退出整个程序</span></span><br><span class="line">def quit():</span><br><span class="line">    <span class="built_in">exit</span>()</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        menu() </span><br><span class="line">        msg=int(input(<span class="string">'请输入菜单编号：'</span>))</span><br><span class="line">        <span class="keyword">if</span> 1==msg:</span><br><span class="line">            username=input(<span class="string">'请输入用户名：'</span>)</span><br><span class="line">            password=input(<span class="string">'请输入密码：'</span>)</span><br><span class="line">            login(username,password)</span><br><span class="line">        <span class="keyword">elif</span> 2==msg:</span><br><span class="line">            buy_time=input(<span class="string">'请输入采购日期，YYYYMMDD格式输入'</span>)</span><br><span class="line">            m_name=input(<span class="string">'请输入药品名称：'</span>)</span><br><span class="line">            m_no=input(<span class="string">'请输入药品编号：'</span>)</span><br><span class="line">            num=int(input(<span class="string">'请输入采购药品数量：'</span>))  </span><br><span class="line">            price=int(input(<span class="string">'请输入药品单价：'</span>))</span><br><span class="line">            buyer=input(<span class="string">'请输入采购者名字：'</span>)</span><br><span class="line">            catalog=input(<span class="string">'请输入药品分类：'</span>)</span><br><span class="line">            buy(buy_time,m_name=m_name,m_no=m_no,num=num,price=price,buyer=buyer,catalog=catalog)</span><br><span class="line">            findall(buy_dic)</span><br><span class="line">        <span class="keyword">elif</span> 3==msg:</span><br><span class="line">            buy_time=input(<span class="string">'请输入采购日期，YYYYMMDD格式输入'</span>)</span><br><span class="line">            stock_time=input(<span class="string">'请输入入库日期，YYYYMMDD格式输入'</span>)  </span><br><span class="line">            stocker=input(<span class="string">'请输入库存者：'</span>)</span><br><span class="line">            stock(buy_time,stock_time,stocker)</span><br><span class="line">            findall(stock_dic)</span><br><span class="line">        <span class="keyword">elif</span> 4==msg:</span><br><span class="line">            sum_price=0</span><br><span class="line">            m_no=input(<span class="string">'请输入药品编号：'</span>)</span><br><span class="line">            sale_time=input(<span class="string">'请输入销售日期，YYYYMMDD格式输入'</span>)</span><br><span class="line">            num=int(input(<span class="string">'请输入销售数量：'</span>)) </span><br><span class="line">            saler=input(<span class="string">'请输入销售员：'</span>)</span><br><span class="line">            sale(sale_time,sum_price,num,saler)</span><br><span class="line">            findall(sale_dic)</span><br><span class="line">        <span class="keyword">elif</span> 5==msg:</span><br><span class="line">           m_name=input(<span class="string">'请输入要查找的药品名称：'</span>)</span><br><span class="line">           count(m_name)     </span><br><span class="line">        <span class="keyword">elif</span> 6==msg:</span><br><span class="line">            msg=input(<span class="string">'确定要退出吗？退出请按q'</span>)</span><br><span class="line">            <span class="keyword">if</span> <span class="string">'Q'</span>==msg or <span class="string">'q'</span> ==msg:</span><br><span class="line">                quit()</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'按键错误，请重新选择！退出请按q'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">import logging</span><br><span class="line">dict1=&#123;</span><br><span class="line">    <span class="string">'tom'</span>:<span class="string">'12345'</span>,</span><br><span class="line">    <span class="string">'jack'</span>:<span class="string">'12345'</span></span><br><span class="line">&#125;</span><br><span class="line">def <span class="built_in">log</span>(msg):</span><br><span class="line">    <span class="comment">#创建日志对象 并设置日志级别</span></span><br><span class="line">    logger=logging.getLogger(<span class="string">'pythonlogger'</span>)</span><br><span class="line">    logger.setLevel(logging.INFO)</span><br><span class="line">    <span class="comment">#创建一个handler,用来将g日志存入文件中</span></span><br><span class="line">    file=logging.FileHandler(<span class="string">'test.log'</span>)</span><br><span class="line">    file.setLevel(logging.INFO)</span><br><span class="line">    <span class="comment">#创建一个handler,用来将日志输出到控制台</span></span><br><span class="line">    console=logging.StreamHandler()</span><br><span class="line">    console.setLevel(logging.INFO)</span><br><span class="line">    <span class="comment">#定义日志输出格式</span></span><br><span class="line">    formatter=logging.Formatter(<span class="string">'%(asctime)s - %(name)s -%(levelname)s-%(message)s'</span>)</span><br><span class="line">    file.setFormatter(formatter)</span><br><span class="line">    console.setFormatter(formatter)</span><br><span class="line">    <span class="comment">#将logger添加到handler</span></span><br><span class="line">    logger.addHandler(file)</span><br><span class="line">    logger.addHandler(console)</span><br><span class="line">    logger.info(msg)</span><br><span class="line">    logger.removeHandler(file)</span><br><span class="line">    logger.removeHandler(console)</span><br><span class="line"><span class="comment"># @mylogger</span></span><br><span class="line"><span class="comment"># def zhuce(username,password):</span></span><br><span class="line"><span class="comment">#     if username in user_msg1.keys():</span></span><br><span class="line"><span class="comment">#         s='用户名已存在请登录'</span></span><br><span class="line"><span class="comment">#     else:</span></span><br><span class="line"><span class="comment">#         user_msg1[username]=password</span></span><br><span class="line"><span class="comment">#         s='注册成功请登录'</span></span><br><span class="line"><span class="comment">#     return s   </span></span><br><span class="line"></span><br><span class="line">def mylogger(f):</span><br><span class="line">    def inner(*var):</span><br><span class="line">        <span class="keyword">if</span> f(*var):</span><br><span class="line">            <span class="built_in">log</span>(f.__name__+<span class="string">'操作成功！'</span>)    </span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">log</span>(<span class="string">'操作失败'</span>) </span><br><span class="line">    <span class="built_in">return</span> inner        </span><br><span class="line">def menu():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'*'</span>*30)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'1、登录'</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'2、注册'</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'3、退出'</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'*'</span>*30)</span><br><span class="line">@mylogger    </span><br><span class="line">def load(username,password):</span><br><span class="line">    flag=False</span><br><span class="line">    <span class="keyword">if</span> username <span class="keyword">in</span> dict1.keys() and password <span class="keyword">in</span> dict1.values():</span><br><span class="line">        flag=True</span><br><span class="line">    <span class="keyword">elif</span> username <span class="keyword">in</span> dict1.keys() and password !=dict1[username]:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'密码错误，请修改密码：'</span>)</span><br><span class="line">        password1=input(<span class="string">'请输入新密码：'</span>)</span><br><span class="line">        dict1[username]=password1</span><br><span class="line">        <span class="built_in">print</span>(dict1)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'密码修改成功，请重新登录'</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        flag=False</span><br><span class="line">    <span class="built_in">return</span> flag</span><br><span class="line">@mylogger    </span><br><span class="line">def regist(username,password):</span><br><span class="line">    flag=False</span><br><span class="line">    <span class="keyword">if</span> username not <span class="keyword">in</span> dict1.keys():</span><br><span class="line">        dict1[username]=password</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'注册成功！'</span>)</span><br><span class="line">        <span class="built_in">print</span>(dict1)</span><br><span class="line">        flag=True</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'用户名存在，请登录：'</span>)</span><br><span class="line">        flag=False</span><br><span class="line">    <span class="built_in">return</span> flag</span><br><span class="line"></span><br><span class="line">@mylogger</span><br><span class="line">def quit(msg):</span><br><span class="line">    flag=False</span><br><span class="line">    <span class="keyword">if</span> <span class="string">'Q'</span>==msg or <span class="string">'q'</span>==msg:</span><br><span class="line">        <span class="built_in">exit</span>()</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        (<span class="string">'退出失败，请重新退出！'</span>)</span><br><span class="line">        flag=False</span><br><span class="line">    <span class="built_in">return</span> flag    </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        menu()</span><br><span class="line">        msg=int(input(<span class="string">'请输入菜单编号：'</span>))</span><br><span class="line">        <span class="keyword">if</span> 1==msg:</span><br><span class="line">            username=input(<span class="string">'请输入用户名：'</span>)</span><br><span class="line">            password=input(<span class="string">'请输入密码：'</span>)</span><br><span class="line">            load(username,password)</span><br><span class="line">        <span class="keyword">elif</span> 2==msg:</span><br><span class="line">            username=input(<span class="string">'请输入用户名：'</span>)</span><br><span class="line">            password=input(<span class="string">'请输入密码：'</span>)</span><br><span class="line">            regist(username,password)   </span><br><span class="line">        <span class="keyword">elif</span> 3 == msg:</span><br><span class="line">            msg=input(<span class="string">'按q或Q退出：'</span>)</span><br><span class="line">            quit(msg)</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/25/fighting11/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/24/fighting10/" class="archive-article-date">
-  	<time datetime="2018-07-24T03:53:55.456Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/fighting9/" class="archive-article-date">
-  	<time datetime="2018-07-23T00:55:30.227Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/fighting9/">第一阶段习题</a>
-    </h1>
+  
+    <a href="/2018/07/24/fighting10/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/fighting8/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:58:04.434Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/fighting8/">高级特性</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/fighting7/" class="archive-article-date">
-  	<time datetime="2018-07-18T10:50:46.126Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/fighting7/">集合、组合数据类型习题</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/fighting6/" class="archive-article-date">
-  	<time datetime="2018-07-18T00:31:19.529Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/fighting6/">字典数据类型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/16/fighting5/" class="archive-article-date">
-  	<time datetime="2018-07-16T08:03:47.289Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/16/fighting5/">测试题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/模板/" class="archive-article-date">
-  	<time datetime="2018-07-14T00:54:43.616Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/模板/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/fighting4/" class="archive-article-date">
-  	<time datetime="2018-07-14T00:33:00.317Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/fighting4/">组合数据类型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/fighting3/" class="archive-article-date">
-  	<time datetime="2018-07-12T05:46:02.105Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/fighting3/">循环语句</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -463,8 +336,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
