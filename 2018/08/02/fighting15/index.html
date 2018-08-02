@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 蓝桉</title>
+  <title>异常 | 蓝桉</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="Python、爬虫、web开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蓝桉">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="概念：指因程序出错在正常的执行流程之外，采取的行为。异常是一个事件，会在程序的执行过程中执行，并影响程序的执行。 异常的几种表达和应用1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071">
+<meta name="keywords" content="Python、爬虫、web开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="异常">
+<meta property="og:url" content="http://yoursite.com/2018/08/02/fighting15/index.html">
 <meta property="og:site_name" content="蓝桉">
+<meta property="og:description" content="概念：指因程序出错在正常的执行流程之外，采取的行为。异常是一个事件，会在程序的执行过程中执行，并影响程序的执行。 异常的几种表达和应用1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-02T14:02:44.430Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蓝桉">
+<meta name="twitter:title" content="异常">
+<meta name="twitter:description" content="概念：指因程序出错在正常的执行流程之外，采取的行为。异常是一个事件，会在程序的执行过程中执行，并影响程序的执行。 异常的几种表达和应用1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071">
   
     <link rel="alternative" href="/atom.xml" title="蓝桉" type="application/atom+xml">
   
@@ -157,289 +161,157 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-fighting15" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      异常
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/02/fighting15/" class="archive-article-date">
+
+        
+        <a href="/2018/08/02/fighting15/" class="archive-article-date">
   	<time datetime="2018-08-02T13:52:30.369Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-02</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/02/fighting15/">异常</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>概念：指因程序出错在正常的执行流程之外，采取的行为。异常是一个事件，会在程序的执行过程中执行，并影响程序的执行。</p>
+<h3 id="异常的几种表达和应用"><a href="#异常的几种表达和应用" class="headerlink" title="异常的几种表达和应用"></a>异常的几种表达和应用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br></pre></td><td class="code"><pre><span class="line">异常的阶段</span><br><span class="line">第一、产生异常（比如：代码错误、业务逻辑错误）</span><br><span class="line">第二、处理异常（比如：将异常提示更加可理解、增强代码的健壮性）</span><br><span class="line">常见的异常类</span><br><span class="line">Exception：Python中所有异常的父类。</span><br><span class="line">NameError：访问了一个未声明的变量。</span><br><span class="line">keyError:访问一个不存在的字典key</span><br><span class="line">IndexError：索引超出序列的范围</span><br><span class="line">ValueError：传给函数的参数类型不正确。</span><br><span class="line">IOError：文件操作时输入输出错误</span><br><span class="line">异常处理流程</span><br><span class="line">基本语法：</span><br><span class="line">try：</span><br><span class="line">   可能会产生异常的代码</span><br><span class="line">except  对应的异常 as 别名：</span><br><span class="line">   异常处理语句</span><br><span class="line"></span><br><span class="line">说明：在try中，放置可能会产生错误的相关代码；except后标明对应的异常类型，一旦try中产生相关异常，except后声明的异常类能够对应捕获，执行相关异常处理语句。如果try外面后续还要其他语句，会继续执行。在产生异常是，出现异常的语句后，如果还有其他语句则不会执行。</span><br><span class="line">try:</span><br><span class="line">   a=2</span><br><span class="line">   b=0</span><br><span class="line">   result=a/b</span><br><span class="line">except ZeroDivisionError as v:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'分母不能为0'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'fdfg'</span>) </span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">   可能会产生异常的代码</span><br><span class="line">except 对应的异常 as 别名：</span><br><span class="line">   异常处理语句</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   程序代码</span><br><span class="line">说明：在此结构中，如果try中的代码出现异常，则使用except后面声明的异常类进行捕获处理，如果没有异常出现，则执行<span class="keyword">else</span>内部的代码。</span><br><span class="line">try: </span><br><span class="line">    a=int(input(<span class="string">'请输入编号：'</span>))  <span class="comment">#第一个异常报错则后面异常不再执行，第一个没有错误第二个错误则报第二个异常，都没有异常则执行else</span></span><br><span class="line">    b=12/2</span><br><span class="line">except ValueError as z:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'错误'</span>)</span><br><span class="line">except ZeroDivisionError as e:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'分母为0了'</span>)    </span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'sdf'</span>)  </span><br><span class="line">finally:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'最后一句'</span>)             <span class="comment">#不管程序中是否有异常，都执行finally中的语句 </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">   可能会产生异常的代码</span><br><span class="line">except 对应的异常 as 别名：</span><br><span class="line">    异常处理语句</span><br><span class="line">except 对应的异常 as 别名：</span><br><span class="line">    异常处理语句</span><br><span class="line">说明：当try中有多行代码可能会出现不同的异常，那么使用多个except与之对应，根据产生异常的顺序来依次捕获处理。</span><br><span class="line"></span><br><span class="line">try：</span><br><span class="line">   可能会出产生异常的代码</span><br><span class="line">except 对应的异常 as 别名：</span><br><span class="line">   异常处理语句</span><br><span class="line">finally：</span><br><span class="line">   代码</span><br><span class="line">说明：当异常捕获处理流程中，使用了finally来控制，表明不管是否出现异常进行捕获，最后代码都将允许finally内部的语句。</span><br><span class="line">注意：finally中的语句，不管前面的代码出现何种操作，比如：<span class="built_in">break</span>、<span class="built_in">return</span>、<span class="built_in">exit</span>等都会执行完finally内部的代码后，才会实现。</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    f=open(<span class="string">'myfil.txt'</span>,<span class="string">'r'</span>)</span><br><span class="line">    s=f.readline()</span><br><span class="line">    <span class="built_in">print</span>(s)</span><br><span class="line">except Exception as e:      <span class="comment">#优先级exception&gt;IOE&gt;FileNotFoundError 写的时候应该是由低到高否则会被拦截</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'错了'</span>)    </span><br><span class="line">except FileNotFoundError as fe:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'文件不存在'</span>)     </span><br><span class="line">except IOError as i:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'文件读取错误'</span>)</span><br><span class="line">finally:</span><br><span class="line">    <span class="comment"># f.close()</span></span><br><span class="line">    try:</span><br><span class="line">        f.close()</span><br><span class="line">    except NameError as ne:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'变量未赋值'</span>)</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    raise IOError(<span class="string">'IO异常'</span>)</span><br><span class="line">except FileNotFoundError as fe:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'文件不存在'</span>)        </span><br><span class="line">    </span><br><span class="line">except IOError as i:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'文件读取错误'</span>)</span><br><span class="line">except Exception as e:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'错了'</span>)     </span><br><span class="line"><span class="comment"># finally:</span></span><br><span class="line"><span class="comment">#     f.close()</span></span><br><span class="line"></span><br><span class="line">异常的分类</span><br><span class="line">在Python中所有的异常都继承自BaseExcept,如下：</span><br><span class="line">          |------&gt;KeyboardInterrupt（键盘中断异常） </span><br><span class="line">          |</span><br><span class="line">BaseExcept|------&gt;SystemExit(系统退出异常)</span><br><span class="line">          |</span><br><span class="line">          |------&gt;Except（其他所有异常的父类）    </span><br><span class="line">其中：keyboardInterrupt在使用强制中断程序时产生。</span><br><span class="line">SystemExit在使用sys.exit()函数时产生。</span><br><span class="line"></span><br><span class="line">主动抛出异常</span><br><span class="line">raise 异常类对象实例或自定义异常类实例</span><br><span class="line">raise IOError(<span class="string">'IO 错误'</span>)</span><br><span class="line"></span><br><span class="line">finally的替换写法</span><br><span class="line">with open(<span class="string">'myfile.txt'</span>,<span class="string">'r'</span>) as f:</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> f:</span><br><span class="line">        <span class="built_in">print</span>(line)</span><br><span class="line">其中打开的文件对象f，在执行完内容的读取后，被强制性关闭。及时在读取过程中，出现错误，也会被关闭。</span><br><span class="line"> 使用异常机制的优势</span><br><span class="line">第一，把错误控制与业务逻辑进行区分，增强程序的可读性和健壮性。</span><br><span class="line">第二，代码结构更加清晰，复杂的业务流程的实现更加便利</span><br><span class="line">第三，程序的容错性更强，不会因为一个小bug导致整体崩溃。</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    </span><br><span class="line">    raise MyError(<span class="string">'my error'</span>)</span><br><span class="line">    </span><br><span class="line">except MyError as my:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'自定义异常'</span>)</span><br><span class="line">     </span><br><span class="line">finally:   <span class="comment">#不管try里面是否有其他操作 exit() 、等都会把finally中的语句执行完</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'df'</span>)    </span><br><span class="line"></span><br><span class="line">f=open(<span class="string">'myfile.txt'</span>,<span class="string">'r'</span>)</span><br><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    line=f.readline()</span><br><span class="line">    <span class="keyword">if</span> line==<span class="string">''</span>:</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(line)    </span><br><span class="line"></span><br><span class="line">with open(<span class="string">'myfile.txt'</span>,<span class="string">'r'</span>) as f:  <span class="comment">#with  as 执行完或出现错误都会强制性关闭  推荐使用这种写法</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> f:</span><br><span class="line">        <span class="built_in">print</span>(i)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">assert 断言</span><br><span class="line">语法格式：assert 表达式，断言内容。代码如下</span><br><span class="line">try:</span><br><span class="line">    assert 1==2,<span class="string">'1 不等于 2'</span></span><br><span class="line">except AssertionError as ae:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'&#123;&#125;&#123;&#125;'</span>.format(ae.__class__.__name__, ae))</span><br><span class="line">如果断言表达式为真，则正常执行，如果不为真，则返回断言内容，作为异常捕获的输出结果。</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    assert 1==2, <span class="string">'1不等于2'</span></span><br><span class="line">except AssertionError as a:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'&#123;&#125;&#123;&#125;'</span>.format(a.__class__.__name__,a))  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def fun(x):</span><br><span class="line">    assert x&lt;0,<span class="string">'参数必须是负数'</span></span><br><span class="line">    <span class="built_in">return</span> x**2</span><br></pre></td></tr></table></figure>
+<h3 id="补充-习题"><a href="#补充-习题" class="headerlink" title="补充 习题"></a>补充 习题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line">i=1</span><br><span class="line">j=1</span><br><span class="line"><span class="keyword">while</span> i&lt;=10:</span><br><span class="line">    <span class="keyword">while</span> j&lt;=10:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'*'</span>*j)</span><br><span class="line">        j=j+1</span><br><span class="line">        i=i+1</span><br><span class="line"></span><br><span class="line">def show(i):</span><br><span class="line">    j=0</span><br><span class="line">    <span class="keyword">while</span> i&lt;=8:</span><br><span class="line">        i=i+1</span><br><span class="line">        j=j*10+i</span><br><span class="line">        <span class="built_in">print</span>(j)</span><br><span class="line">show(0) </span><br><span class="line"></span><br><span class="line">def show():</span><br><span class="line">    j=0</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">        j=j+99</span><br><span class="line">    <span class="built_in">print</span>(j)   </span><br><span class="line">show() </span><br><span class="line"></span><br><span class="line">from functools import reduce</span><br><span class="line">a=reduce(lambda x,y:x+y,range(1,101))</span><br><span class="line"><span class="built_in">print</span>(a)</span><br><span class="line"></span><br><span class="line">def show(sum):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(1,101):</span><br><span class="line">        sum=i+sum</span><br><span class="line">    <span class="built_in">print</span>(sum)</span><br><span class="line">show(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">from functools import reduce</span><br><span class="line">a=reduce(lambda x,y:x*y,range(1,11))</span><br><span class="line"><span class="built_in">print</span>(a)  </span><br><span class="line"></span><br><span class="line">def show(j):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">        j=j*i</span><br><span class="line">    <span class="built_in">print</span>(j)</span><br><span class="line">show(1)  </span><br><span class="line"></span><br><span class="line">i=1</span><br><span class="line">j=1</span><br><span class="line"><span class="keyword">while</span> i&lt;=20:</span><br><span class="line">    j=j*2</span><br><span class="line">    i=i+1</span><br><span class="line"><span class="built_in">print</span>(j)</span><br><span class="line"></span><br><span class="line">def show():</span><br><span class="line">    i=1</span><br><span class="line">    j=1</span><br><span class="line">    <span class="keyword">while</span> i&lt;=20:</span><br><span class="line">        j=j*2</span><br><span class="line">        i=i+1</span><br><span class="line">    <span class="built_in">print</span>(j)</span><br><span class="line">show()        </span><br><span class="line">from functools import reduce</span><br><span class="line"></span><br><span class="line">a=filter(lambda x:x%3==0 or x%7==0,range(1,1001))</span><br><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> a:</span><br><span class="line">    sum=sum+i</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"></span><br><span class="line">sum=0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,1001):</span><br><span class="line">    <span class="keyword">if</span> i%3==0 or i%7==0:</span><br><span class="line">        sum=sum+i</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">l1=[21,3,54,6,8,90]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(l1)):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(i+1,len(l1)):</span><br><span class="line">        first=l1[i]</span><br><span class="line">        second=l1[j]</span><br><span class="line">        <span class="keyword">if</span> first &lt;second:</span><br><span class="line">            l1[i]=l1[j]</span><br><span class="line">            l1[j]=first</span><br><span class="line"><span class="built_in">print</span>(l1)</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/02/fighting15/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/01/fighting14/" class="archive-article-date">
-  	<time datetime="2018-08-01T12:32:45.397Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-01</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/01/fighting14/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">对文件操作 包 和模块</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/01/fighting14/">对文件操作 包 和模块</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/31/fighting13/" class="archive-article-date">
-  	<time datetime="2018-07-31T00:37:42.680Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/31/fighting13/">文件概念、习题</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/29/fighting12/" class="archive-article-date">
-  	<time datetime="2018-07-29T05:18:36.997Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/29/fighting12/">高阶函数和文件输入输出</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/25/fighting11/" class="archive-article-date">
-  	<time datetime="2018-07-25T12:10:58.137Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/25/fighting11/">函数嵌套、闭包、高阶函数（匿名函数）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/24/fighting10/" class="archive-article-date">
-  	<time datetime="2018-07-24T03:53:55.456Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/fighting9/" class="archive-article-date">
-  	<time datetime="2018-07-23T00:55:30.227Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/fighting9/">第一阶段习题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/fighting8/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:58:04.434Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/fighting8/">高级特性</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/fighting7/" class="archive-article-date">
-  	<time datetime="2018-07-18T10:50:46.126Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/fighting7/">集合、组合数据类型习题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/fighting6/" class="archive-article-date">
-  	<time datetime="2018-07-18T00:31:19.529Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/fighting6/">字典数据类型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -463,8 +335,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
