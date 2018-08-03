@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 蓝桉</title>
+  <title>模块 | 蓝桉</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="Python、爬虫、web开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蓝桉">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="序列化模块        hashlib模块         configparser          loggingcollections        Time                Random               sys 代码练习123456789101112131415161718192021222324252627282930313233343536373839404">
+<meta name="keywords" content="Python、爬虫、web开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="模块">
+<meta property="og:url" content="http://yoursite.com/2018/08/03/fighting16/index.html">
 <meta property="og:site_name" content="蓝桉">
+<meta property="og:description" content="序列化模块        hashlib模块         configparser          loggingcollections        Time                Random               sys 代码练习123456789101112131415161718192021222324252627282930313233343536373839404">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-03T13:50:54.625Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蓝桉">
+<meta name="twitter:title" content="模块">
+<meta name="twitter:description" content="序列化模块        hashlib模块         configparser          loggingcollections        Time                Random               sys 代码练习123456789101112131415161718192021222324252627282930313233343536373839404">
   
     <link rel="alternative" href="/atom.xml" title="蓝桉" type="application/atom+xml">
   
@@ -157,289 +161,159 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-fighting16" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      模块
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/03/fighting16/" class="archive-article-date">
+
+        
+        <a href="/2018/08/03/fighting16/" class="archive-article-date">
   	<time datetime="2018-08-03T13:40:28.314Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/03/fighting16/">模块</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>序列化模块        hashlib模块         configparser          logging<br>collections        Time                Random               sys</p>
+<h3 id="代码练习"><a href="#代码练习" class="headerlink" title="代码练习"></a>代码练习</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#内置方法</span></span><br><span class="line">s=<span class="string">'hello world'</span></span><br><span class="line">length=len(s)</span><br><span class="line">s.__len__</span><br><span class="line"><span class="built_in">print</span>(s.__len__())<span class="comment">#内置方法</span></span><br><span class="line"></span><br><span class="line">a=19</span><br><span class="line">b=12</span><br><span class="line"><span class="built_in">print</span>(a==b)</span><br><span class="line"><span class="built_in">print</span>(a.__eq__(b))</span><br><span class="line"></span><br><span class="line">import json</span><br><span class="line"><span class="comment"># f=open('myfile.txt','w',encoding='utf-8')</span></span><br><span class="line"><span class="comment"># dic=&#123;'name':'tom','age':23,'sex':'男'&#125;</span></span><br><span class="line"><span class="comment"># json.dump(dic,f)</span></span><br><span class="line"><span class="comment"># f.close()</span></span><br><span class="line"><span class="comment"># result=json.dumps(dic)</span></span><br><span class="line"><span class="comment"># print(type(result),result)</span></span><br><span class="line">f=open(<span class="string">'myfile.txt'</span>,<span class="string">'r'</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">result=json.load(f)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">import pickle</span><br><span class="line">f=open(<span class="string">'myfile.dat'</span>,<span class="string">'wb'</span>)  <span class="comment">#pickle 中默认处理二进制文件 不用encoding编码 </span></span><br><span class="line">dic=&#123;<span class="string">'id'</span>:<span class="string">'2134'</span>,<span class="string">'name'</span>:<span class="string">'tom'</span>,<span class="string">'age'</span>:23&#125;</span><br><span class="line">pickle.dump(dic,f)</span><br><span class="line">f.close()</span><br><span class="line">f=open(<span class="string">'myfile.dat'</span>,<span class="string">'rb'</span>)</span><br><span class="line">a=pickle.load(f)</span><br><span class="line"><span class="built_in">print</span>(a)</span><br><span class="line"><span class="comment"># result=pickle.dumps(dic)</span></span><br><span class="line"><span class="comment"># print(result)</span></span><br><span class="line"><span class="comment"># a=pickle.loads(result)</span></span><br><span class="line"><span class="comment"># print(a)</span></span><br><span class="line"></span><br><span class="line">import pickle</span><br><span class="line">f=open(<span class="string">'myfile.dat'</span>,<span class="string">'wb'</span>)  <span class="comment">#pickle 中默认处理二进制文件 不用encoding编码 pickle 可以一次写读多行的，json不可以 </span></span><br><span class="line">dic1=&#123;<span class="string">'id'</span>:<span class="string">'2134'</span>,<span class="string">'name'</span>:<span class="string">'tom'</span>,<span class="string">'age'</span>:23&#125;</span><br><span class="line">dic2=&#123;<span class="string">'id'</span>:<span class="string">'21234'</span>,<span class="string">'name'</span>:<span class="string">'jal'</span>,<span class="string">'age'</span>:22&#125;</span><br><span class="line">dic3=&#123;<span class="string">'id'</span>:<span class="string">'2894'</span>,<span class="string">'name'</span>:<span class="string">'swen'</span>,<span class="string">'age'</span>:21&#125;</span><br><span class="line">pickle.dump(dic1,f)</span><br><span class="line">pickle.dump(dic2,f)</span><br><span class="line">pickle.dump(dic3,f)</span><br><span class="line">f.close()</span><br><span class="line">f=open(<span class="string">'myfile.dat'</span>,<span class="string">'rb'</span>)</span><br><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    try:</span><br><span class="line">        a=pickle.load(f)</span><br><span class="line">        <span class="built_in">print</span>(a)</span><br><span class="line">    except Exception as e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'文件读取完成'</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">f.close()   </span><br><span class="line"></span><br><span class="line">import shelve</span><br><span class="line">s=shelve.open(<span class="string">'myfile'</span>)</span><br><span class="line">s[<span class="string">'key'</span>]=&#123;<span class="string">'id'</span>:<span class="string">'123'</span>,<span class="string">'name'</span>:<span class="string">'tom'</span>,<span class="string">'age'</span>:22&#125;     </span><br><span class="line">s.close()</span><br><span class="line">f=shelve.open(<span class="string">'myfile'</span>)</span><br><span class="line"><span class="built_in">print</span>(f[<span class="string">'key'</span>])</span><br><span class="line"></span><br><span class="line">import hashlib</span><br><span class="line">a=hashlib.md5()</span><br><span class="line">a.update(<span class="string">'sda'</span>.encode(<span class="string">'utf-8'</span>))</span><br><span class="line"><span class="built_in">print</span>(a.hexdigest)</span><br><span class="line">b=hashlib.md5(<span class="string">'asd'</span>.encode(<span class="string">'utf-8'</span>))</span><br><span class="line">b.update(<span class="string">'sda'</span>.encode(<span class="string">'utf-8'</span>))  <span class="comment">#加盐</span></span><br><span class="line"><span class="built_in">print</span>(b.hexdigest)</span><br><span class="line"></span><br><span class="line">import hashlib</span><br><span class="line">def check(file):</span><br><span class="line"></span><br><span class="line">    a=hashlib.md5()</span><br><span class="line">    with open(file,<span class="string">'rb'</span>) as f:</span><br><span class="line">        content=f.read()</span><br><span class="line">        a.update(content)</span><br><span class="line">    <span class="built_in">return</span> a.hexdigest</span><br><span class="line">result1 =check(<span class="string">'myfile.txt'</span>)</span><br><span class="line">result2 =check(<span class="string">'myfile1.txt'</span>)</span><br><span class="line"><span class="built_in">print</span>(result1)</span><br><span class="line"><span class="built_in">print</span>(result2)</span><br><span class="line"></span><br><span class="line"><span class="comment"># import configparser</span></span><br><span class="line"><span class="comment">#生成一个配置文件对象</span></span><br><span class="line">config=configparser.ConfigParser()</span><br><span class="line">config[<span class="string">'account'</span>]=&#123;</span><br><span class="line">    <span class="string">'username'</span>:<span class="string">'tom'</span>,</span><br><span class="line">    <span class="string">'password'</span>:<span class="string">'1234'</span></span><br><span class="line">&#125;</span><br><span class="line">with open(<span class="string">'user.ini'</span>,<span class="string">'w'</span>) as f:</span><br><span class="line">    config.write(f)</span><br><span class="line"></span><br><span class="line">import configparser</span><br><span class="line">config=configparser.ConfigParser()</span><br><span class="line">将配置文件中内容读出,则原来section和option中的内容都会读出</span><br><span class="line">l1=config.read(<span class="string">'user.ini'</span>)</span><br><span class="line">增加一个小节</span><br><span class="line">config.add_section(<span class="string">'info'</span>)</span><br><span class="line">with open(<span class="string">'user.ini'</span>,<span class="string">'w'</span>) as f:</span><br><span class="line">    config.write(f)</span><br><span class="line">根据section添加option</span><br><span class="line">config.set(<span class="string">'info'</span>,<span class="string">'address'</span>,<span class="string">'zhengzhou'</span>)</span><br><span class="line">config.set(<span class="string">'info'</span>,<span class="string">'name'</span>,<span class="string">'sdf'</span>)</span><br><span class="line">with open(<span class="string">'user.ini'</span>,<span class="string">'w'</span>) as f:</span><br><span class="line">    config.write(f)</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除指定的section，同时删除内部的option</span></span><br><span class="line">config.remove_section(<span class="string">'info'</span>)  </span><br><span class="line">with open(<span class="string">'user.ini'</span>,<span class="string">'w'</span>) as f:</span><br><span class="line">    config.write(f)</span><br><span class="line">删除指定的setion下的option </span><br><span class="line">config.remove_option(<span class="string">'account'</span>,<span class="string">'password'</span>)  </span><br><span class="line">with open(<span class="string">'user.ini'</span>,<span class="string">'w'</span>) as f:</span><br><span class="line">    config.write(f)  </span><br><span class="line">得到配置文件中所有小节名称</span><br><span class="line"><span class="built_in">print</span>(config.sections())</span><br><span class="line">通过小节名称得到所有内部option的选项</span><br><span class="line"><span class="built_in">print</span>(config.options(<span class="string">'account'</span>))</span><br><span class="line">判断指定的小节名称是否在配置文件中存在</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'account'</span> <span class="keyword">in</span> config)</span><br><span class="line">通过指定的小节名称，已经option的key,得到对应的value</span><br><span class="line"><span class="built_in">print</span>(config[<span class="string">'account'</span>][<span class="string">'username'</span>])</span><br><span class="line"><span class="built_in">print</span>(config[<span class="string">'info'</span>][<span class="string">'address'</span>])</span><br></pre></td></tr></table></figure>
+<h3 id="用函数对配置文件进行操作"><a href="#用函数对配置文件进行操作" class="headerlink" title="用函数对配置文件进行操作"></a>用函数对配置文件进行操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">import configparser</span><br><span class="line">def createConfig(section, content, file):</span><br><span class="line">    <span class="comment"># 生成一个配置文件对象</span></span><br><span class="line">    config = configparser.ConfigParser()</span><br><span class="line">    config[section] = content</span><br><span class="line">    with open(file, <span class="string">'w'</span>) as f:</span><br><span class="line">        config.write(f)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def readConfig(file):</span><br><span class="line">    config = configparser.ConfigParser()</span><br><span class="line">    <span class="comment"># 将配置文件中的内容读取，原有的section及option都会被取出</span></span><br><span class="line">    config.read(file)</span><br><span class="line">    <span class="built_in">return</span> config</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def saveConfig(file):</span><br><span class="line">    with open(file, <span class="string">'w'</span>) as f:</span><br><span class="line">        config.write(f)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def removeSection(config, section, file):</span><br><span class="line">    <span class="comment"># 删除指定的section,同时会删除其内部的option</span></span><br><span class="line">    config.remove_section(section)</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def removeOption(config, section, option, file):</span><br><span class="line">    <span class="comment">#删除指定的Option</span></span><br><span class="line">    config.remove_option(section, option)</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def addSection(config, section, file):</span><br><span class="line">    <span class="comment">#添加指定的section</span></span><br><span class="line">    config.add_section(section)</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def addOption(config, section, file, *option):</span><br><span class="line">    <span class="comment">#在指定的section中添加option</span></span><br><span class="line">    config.set(section, option[0], option[1])</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def findSection(config):</span><br><span class="line">    <span class="built_in">return</span> config.sections()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def findOptions(config, section):</span><br><span class="line">    <span class="built_in">return</span> config.options(section)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    section = <span class="string">'account'</span></span><br><span class="line">    content = &#123;<span class="string">'addr'</span>: <span class="string">'zhengzhou'</span>, <span class="string">'type'</span>: <span class="string">'A'</span>&#125;</span><br><span class="line">    file = <span class="string">'book.ini'</span></span><br><span class="line">    <span class="comment"># createConfig(section, content, file)</span></span><br><span class="line">    config = readConfig(file)</span><br><span class="line">    addSection(config, section, file)</span><br></pre></td></tr></table></figure>
+<h3 id="模块代码"><a href="#模块代码" class="headerlink" title="模块代码"></a>模块代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br></pre></td><td class="code"><pre><span class="line">from collections import namedtuple</span><br><span class="line"><span class="built_in">test</span>=namedtuple(<span class="string">'hello'</span>,[<span class="string">'x'</span>,<span class="string">'y'</span>])</span><br><span class="line">p=<span class="built_in">test</span>(1,2)</span><br><span class="line"><span class="built_in">print</span>(p.x)</span><br><span class="line"><span class="built_in">print</span>(p.y)</span><br><span class="line"></span><br><span class="line">from collections import deque</span><br><span class="line">dq=deque()</span><br><span class="line">dq.append(1)</span><br><span class="line">dq.append(2)</span><br><span class="line">dq.append(3)</span><br><span class="line">dq.popleft()</span><br><span class="line"><span class="built_in">print</span>(dq)</span><br><span class="line"></span><br><span class="line">from collections import Counter</span><br><span class="line">c=Counter(<span class="string">'wsdsdad  ds  dsad  dsa '</span>)</span><br><span class="line"><span class="built_in">print</span>(c)</span><br><span class="line"></span><br><span class="line">import time</span><br><span class="line"><span class="built_in">print</span>(time.time())</span><br><span class="line"><span class="built_in">print</span>(time.strftime(<span class="string">'%Y-%m-%d-%H:%M:%S-%A-%w'</span>))</span><br><span class="line"><span class="built_in">print</span>(time.localtime())</span><br><span class="line"><span class="built_in">print</span>(time.gmtime())</span><br><span class="line"></span><br><span class="line">import time</span><br><span class="line"><span class="built_in">print</span>(time.time())</span><br><span class="line">p=time.strptime(<span class="string">'2018-08-08'</span>,<span class="string">'%Y-%m-%d'</span>)</span><br><span class="line"><span class="built_in">print</span>(time.mktime(p))</span><br><span class="line"></span><br><span class="line">p1=time.localtime(150000000)</span><br><span class="line"><span class="built_in">print</span>(time.strftime(<span class="string">'%Y-%m-%d'</span>,p1))</span><br><span class="line"></span><br><span class="line">import random,sys</span><br><span class="line"><span class="built_in">print</span>(random.random())<span class="comment">#返回大于0小于1的随机数</span></span><br><span class="line"><span class="built_in">print</span>(random.uniform(1,3))</span><br><span class="line"><span class="built_in">print</span>(random.randrange(1,10,2))</span><br><span class="line"><span class="built_in">print</span>(random.randint(1,10))</span><br><span class="line"><span class="built_in">print</span>(random.choice([1,2,3,4,5,6,7,8,9,<span class="string">'sd'</span>,<span class="string">'ds'</span>]))</span><br><span class="line"><span class="built_in">print</span>(random.sample([1,2,[4,5],<span class="string">'ft'</span>],3))</span><br><span class="line">item=[1,2,2,3,5]</span><br><span class="line">random.shuffle(item)</span><br><span class="line"><span class="built_in">print</span>(item)</span><br><span class="line"><span class="built_in">print</span>(sys.argv)</span><br><span class="line"><span class="built_in">print</span>(sys.version)</span><br><span class="line"><span class="built_in">print</span>(sys.path)</span><br><span class="line"><span class="built_in">print</span>(sys.platform)</span><br><span class="line">sys.exit(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># import time</span></span><br><span class="line"><span class="comment"># a=time.strftime('%Y-%m-%d %H:%M:%S')</span></span><br><span class="line"><span class="comment"># print(a)</span></span><br><span class="line"><span class="comment"># b=time.time()</span></span><br><span class="line"><span class="comment"># print(b)</span></span><br><span class="line"><span class="comment"># p=time.strptime('2015-3-6-10:00:00' ,'%Y-%m-%d %H:%M:%S')</span></span><br><span class="line"><span class="comment"># print(time.mktime(p))</span></span><br><span class="line"></span><br><span class="line">import random</span><br><span class="line">def ran():</span><br><span class="line">    l1=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(1,7):</span><br><span class="line">        test_word=random.randrange(0,10)</span><br><span class="line">        l1.append(test_word)</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> l1:</span><br><span class="line">        <span class="built_in">print</span>(j,end=<span class="string">' '</span>)</span><br><span class="line">ran()    </span><br><span class="line"></span><br><span class="line">import random</span><br><span class="line">def ran():</span><br><span class="line">    l1=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(1,5):</span><br><span class="line">        a=random.randrange(1,4)</span><br><span class="line">        <span class="keyword">if</span> a==1:</span><br><span class="line">            test_word=chr(random.randrange(65,92))</span><br><span class="line">            l1.append(test_word)</span><br><span class="line">        <span class="keyword">elif</span> a==2:</span><br><span class="line">            test_word=chr(random.randrange(97,123))</span><br><span class="line">            l1.append(test_word)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            test_word=random.randrange(1,10)</span><br><span class="line">            l1.append(test_word)    </span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> l1:</span><br><span class="line">        <span class="built_in">print</span>(j,end=<span class="string">' '</span>)</span><br><span class="line">ran() </span><br><span class="line"></span><br><span class="line">import json</span><br><span class="line">def writefile():</span><br><span class="line">    f=open(<span class="string">'myfile.txt'</span>,<span class="string">'a+'</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">    dic1=&#123;<span class="string">'name'</span>:<span class="string">'tom'</span>,<span class="string">'age'</span>:23,<span class="string">'sex'</span>:<span class="string">'男'</span>&#125;</span><br><span class="line">    dic2=&#123;<span class="string">'one'</span>:<span class="string">'beijing'</span>,<span class="string">'two'</span>:<span class="string">'zhengzhou'</span>,<span class="string">'three'</span>:<span class="string">'shanghai'</span>&#125;</span><br><span class="line">    json.dump(dic1,f)</span><br><span class="line">    f.write(<span class="string">'\n'</span>)</span><br><span class="line">    json.dump(dic2,f)</span><br><span class="line">    f.close()</span><br><span class="line">writefile()</span><br><span class="line">def readfile():</span><br><span class="line">    with open(<span class="string">'myfile.txt'</span>,<span class="string">'r'</span>,encoding=<span class="string">'utf-8'</span>) as f: </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> f:</span><br><span class="line"></span><br><span class="line">            <span class="built_in">print</span>(i)</span><br><span class="line">readfile()</span><br><span class="line"></span><br><span class="line"><span class="comment">#时间题目、时间戳、格式化时间、结构化时间</span></span><br><span class="line">import time</span><br><span class="line">def show(item):</span><br><span class="line">    rule_time=time.strptime(item,<span class="string">'%Y-%m-%d %H:%M:%S'</span>)</span><br><span class="line">    rule_time1=time.mktime(rule_time)</span><br><span class="line">    current_time=time.strptime(time.strftime(<span class="string">'%Y-%m-%d %H:%M:%S'</span>),<span class="string">'%Y-%m-%d %H:%M:%S'</span>)</span><br><span class="line">    current_time1=time.mktime(current_time)</span><br><span class="line">    result=int(current_time1-rule_time1)</span><br><span class="line">    minute=result/60</span><br><span class="line">    hour=minute/60</span><br><span class="line">    day=hour/24</span><br><span class="line">    month=day/30</span><br><span class="line">    year=month/12</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'我们已经毕业了 &#123;0&#125;年  &#123;1&#125;月  &#123;2&#125;天  &#123;3&#125;小时  &#123;4&#125;分钟  &#123;5&#125;秒！！！！'</span>.format(year,month,day,hour,minute,result))</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    item = input(<span class="string">'请输入时间：(如：Y-m-d H:M:S xxxx-xx-xx xx:xx:xx)'</span>)</span><br><span class="line">    show(item)</span><br></pre></td></tr></table></figure>
+<h3 id="时间补充"><a href="#时间补充" class="headerlink" title="时间补充"></a>时间补充</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">在python中，通常有三种方式来表示时间：时间戳，元组(struct_time),格式化的时间字符串</span><br><span class="line">时间戳(timestamp) ：通常来说，时间戳表示的是从1970年1月1日00:00:00开始按秒计算的偏移量。我们运行“<span class="built_in">type</span>(time.time())”，返回的是<span class="built_in">float</span>类型</span><br><span class="line"></span><br><span class="line">格式化的时间字符串(Format String): <span class="string">'1999-12-06'</span></span><br><span class="line">%y 两位数的年份表示（00-99）</span><br><span class="line">%Y 四位数的年份表示（000-9999）</span><br><span class="line">%m 月份（01-12）</span><br><span class="line">%d 月内中的一天（0-31）</span><br><span class="line">%H 24小时制小时数（0-23）</span><br><span class="line">%I 12小时制小时数（01-12）</span><br><span class="line">%M 分钟数（00=59）</span><br><span class="line">%S 秒（00-59）</span><br><span class="line">%a 本地简化星期名称</span><br><span class="line"></span><br><span class="line">%A 本地完整星期名称</span><br><span class="line">%b 本地简化的月份名称</span><br><span class="line">%B 本地完整的月份名称</span><br><span class="line">%c 本地相应的日期表示和时间表示</span><br><span class="line">%j 年内的一天（001-366）</span><br><span class="line">%p 本地A.M.或P.M.的等价符</span><br><span class="line">%U 一年中的星期数（00-53）星期天为星期的开始</span><br><span class="line">%w 星期（0-6），星期天为星期的开始</span><br><span class="line">%W 一年中的星期数（00-53）星期一为星期的开始</span><br><span class="line">%x 本地相应的日期表示</span><br><span class="line">%X 本地相应的时间表示</span><br><span class="line">%Z 当前时区的名称</span><br><span class="line">%% %号本身</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/03/fighting16/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/02/fighting15/" class="archive-article-date">
-  	<time datetime="2018-08-02T13:52:30.369Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-02</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/02/fighting15/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">异常</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/02/fighting15/">异常</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/01/fighting14/" class="archive-article-date">
-  	<time datetime="2018-08-01T12:32:45.397Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/01/fighting14/">对文件操作 包 和模块</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/31/fighting13/" class="archive-article-date">
-  	<time datetime="2018-07-31T00:37:42.680Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/31/fighting13/">文件概念、习题</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/29/fighting12/" class="archive-article-date">
-  	<time datetime="2018-07-29T05:18:36.997Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/29/fighting12/">高阶函数和文件输入输出</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/25/fighting11/" class="archive-article-date">
-  	<time datetime="2018-07-25T12:10:58.137Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/25/fighting11/">函数嵌套、闭包、高阶函数（匿名函数）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/24/fighting10/" class="archive-article-date">
-  	<time datetime="2018-07-24T03:53:55.456Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/fighting9/" class="archive-article-date">
-  	<time datetime="2018-07-23T00:55:30.227Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/fighting9/">第一阶段习题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/fighting8/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:58:04.434Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/fighting8/">高级特性</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/fighting7/" class="archive-article-date">
-  	<time datetime="2018-07-18T10:50:46.126Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/fighting7/">集合、组合数据类型习题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -463,8 +337,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
