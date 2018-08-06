@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 蓝桉</title>
+  <title>面向对象 | 蓝桉</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="Python、爬虫、web开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蓝桉">
-<meta property="og:url" content="http://yoursite.com/archives/page/2/index.html">
+  <meta name="description" content="类：指具有相同属性或行为的一组事物。   对象：是指类的具体化。类与对象的关系类是一组对象的抽象表示，而对象是类的具体化表现。 类与对象123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707">
+<meta name="keywords" content="Python、爬虫、web开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面向对象">
+<meta property="og:url" content="http://yoursite.com/2018/08/06/fighting17/index.html">
 <meta property="og:site_name" content="蓝桉">
+<meta property="og:description" content="类：指具有相同属性或行为的一组事物。   对象：是指类的具体化。类与对象的关系类是一组对象的抽象表示，而对象是类的具体化表现。 类与对象123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-06T13:58:14.111Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蓝桉">
+<meta name="twitter:title" content="面向对象">
+<meta name="twitter:description" content="类：指具有相同属性或行为的一组事物。   对象：是指类的具体化。类与对象的关系类是一组对象的抽象表示，而对象是类的具体化表现。 类与对象123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707">
   
     <link rel="alternative" href="/atom.xml" title="蓝桉" type="application/atom+xml">
   
@@ -157,295 +161,159 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-fighting17" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      面向对象
+    </h1>
+  
+
+        
+        <a href="/2018/08/06/fighting17/" class="archive-article-date">
+  	<time datetime="2018-08-06T13:53:51.548Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>类：指具有相同属性或行为的一组事物。<br>   对象：是指类的具体化。<br>类与对象的关系<br>类是一组对象的抽象表示，而对象是类的具体化表现。</p>
+<h3 id="类与对象"><a href="#类与对象" class="headerlink" title="类与对象"></a>类与对象</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line">类的语法结构</span><br><span class="line">class 类名：</span><br><span class="line">     变量声明语句</span><br><span class="line">     执行语句</span><br><span class="line">     def func(self):</span><br><span class="line">         执行语句</span><br><span class="line">其中，类名首字母要求大写（约定俗成），遵守Python命名规则，不能以数字开头，通常我们都是字母开头。</span><br><span class="line">注意：</span><br><span class="line">1）如果类中声明了函数，其函数的参数，必须有一个默认的参数为self，self代表了该类的实例化对象。</span><br><span class="line">2）如果在类中声明了变量，且该变量位于函数体之外，这个变量我们成为类变量，类变量是公共的。类变量的调用可以直接使用类名进行调用，比如：</span><br><span class="line">class Dog:  <span class="comment"># 定义一个类，类名Animal</span></span><br><span class="line">    color = <span class="string">'灰色'</span></span><br><span class="line">    leg_num = 4</span><br><span class="line">    weight = 20</span><br><span class="line">    width = 150</span><br><span class="line"></span><br><span class="line">    def wangwang(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'wangwangwangwang'</span>)</span><br><span class="line"></span><br><span class="line">    def eat(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'一顿饭20块钱'</span>)</span><br><span class="line"></span><br><span class="line">    def run(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'非常快'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">husky = Dog()  <span class="comment"># 将类实例化成对象，对象为dog</span></span><br><span class="line">husky.run()</span><br><span class="line">Dog.color</span><br><span class="line"></span><br><span class="line">类变量，作为公共的变量，不管类实例化多少个对象，都只实例一份类变量。而且类变量会在对象实例化之前载入内容，一旦改变了类变量中的内容，所有对象中调用这个类变量的值都会随之改变。</span><br><span class="line"></span><br><span class="line">3)在类实例化对象时，会将其定义的属性和行为，生成一份副本给具体的实例化对象。对象与对象之间，他们的属性和行为是不相互干扰的。</span><br><span class="line"></span><br><span class="line">class Dog:  <span class="comment"># 定义一个类，类名Animal</span></span><br><span class="line">    color = <span class="string">'灰色'</span></span><br><span class="line"></span><br><span class="line">    def __init__(self, num):</span><br><span class="line">        self.num = num</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    def getNum(self):</span><br><span class="line">        <span class="built_in">print</span>(self.num)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">husky = Dog(5)  <span class="comment"># 将类实例化成对象，对象为dog</span></span><br><span class="line">samoye = Dog(3)</span><br><span class="line">husky.getNum()</span><br><span class="line">samoye.getNum()</span><br><span class="line"></span><br><span class="line">我们在实例化Dog类时，生成两个对象husky、samoye，这两对象在实例化的过程中会生成两套成员变量和函数，他们的相互不干扰的。我们可以观察上面的代码，发现num变量属于成员变量，即husky和samoye各有持有相同的成员变量，但是修改num的值，husky为5，而samoye为3。结果表明他们的成员变量只能归各自的对象所拥有，并进行改变。对象与对象之间不会相互影响。</span><br><span class="line">4）使用构造函数，来初始化成员变量</span><br><span class="line">class Person:</span><br><span class="line"></span><br><span class="line">    def __init__(self):  <span class="comment"># 构造函数，在实例化对象时被默认调用，用来给对象的成员变量赋值</span></span><br><span class="line">        self.name = <span class="string">'tom'</span></span><br><span class="line">        self.age = 21</span><br><span class="line">        self.tel = <span class="string">'1350000000'</span></span><br><span class="line">        self.address = <span class="string">'北京'</span></span><br><span class="line">        self.sex = <span class="string">'男'</span></span><br><span class="line">    </span><br><span class="line">    def setName(self, name):</span><br><span class="line">        self.name = name</span><br><span class="line">    </span><br><span class="line">    def getName(self):</span><br><span class="line">        <span class="built_in">return</span> self.name</span><br><span class="line">p1 = Person()</span><br><span class="line">p1.name</span><br><span class="line">使用__init__()函数，用来初始化成员变量。对象在实例化时，会默认的调用__init__()函数，同时将成员变量进行初始化。同时，在构造函数中，使用self.变量名进行初始化的成员变量，都是公有的。即在类外可以通过实例化的对象调用。</span><br><span class="line"></span><br><span class="line">类变量与成员变量的区别</span><br><span class="line">1、类变量是声明在类中，位于函数之外声明的变量。这些变量时公共的，即在类外使用类名.类变量的方式进行调用。我们一旦修改类变量的值，所有调用类变量的内容均发生改变。</span><br><span class="line">2、成员变量，是声明在类中的构造函数中，通过self.变量来进行声明赋值的。这些成员变量是公有的，即在类外可以通过对象名.成员变量的方式进行调用。所有的对象都有自己的成员变量，也就意味着每个对象的成员变量都是独立的，不会相互干扰。</span><br><span class="line">3、类变量是该类所有实例化对象所公有的，它会早于对象实例化之前被载入内容中。</span><br><span class="line">成员变量都是跟随对象实例化的过程中，被声明出来的。它是伴随着对象的产生而产生，消亡而消亡的。</span><br><span class="line">4、成员变量和方法，默认情况下都是公有的。也就是说在类外可以直接使用对象进行调用。我们可以通过为成员变量设置双下划线，将其标识为私有的成员变量，例如：self.__name = <span class="string">'tom'</span>。私有的成员变量只能在类内进行直接使用，类外必须通过相关方法进行间接调用。</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line">class MyClass:</span><br><span class="line">    pass </span><br><span class="line"></span><br><span class="line">p=MyClass()</span><br><span class="line"><span class="built_in">print</span>(p.__class__.__name__)    </span><br><span class="line"></span><br><span class="line">class Animal:  <span class="comment">#class+类名 类名为Animal</span></span><br><span class="line">    pass</span><br><span class="line">cat =Animal()<span class="comment">#将类实例化成对象猫    </span></span><br><span class="line"></span><br><span class="line">class Dog:</span><br><span class="line">    color =<span class="string">'黑色'</span></span><br><span class="line">    leg_num=4</span><br><span class="line">    weight=20</span><br><span class="line">    width=150</span><br><span class="line">    def wangwang(self): <span class="comment"># 括号里面要调用对象本身</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'wangwang'</span>)</span><br><span class="line">    def eat(self,item):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'骨头'</span>+item)</span><br><span class="line">    def run(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'跑得快！'</span>)         </span><br><span class="line">husky=Dog(4) </span><br><span class="line">samoye=Dog(3)  </span><br><span class="line">husky.run() </span><br><span class="line">husky.eat(<span class="string">'面包'</span>)</span><br><span class="line">samoye.eat(<span class="string">'肉'</span>)</span><br><span class="line">husky.wangwang()  <span class="comment">#用对象调用方法、函数</span></span><br><span class="line"><span class="built_in">print</span>(husky.color)</span><br><span class="line"><span class="built_in">print</span>(Dog.color)  <span class="comment">#用类名调用属性</span></span><br><span class="line"></span><br><span class="line">class Person:</span><br><span class="line">    num=12</span><br><span class="line">    def __init__(self): <span class="comment">#构造函数，在实例化对象时被默认调用，用来给对象的成员变量赋值(初始化成员变量)</span></span><br><span class="line">        self.name=<span class="string">'tom'</span></span><br><span class="line">        self.age=23</span><br><span class="line">        self.tel=<span class="string">'243567432'</span></span><br><span class="line">        self.address=<span class="string">'郑州'</span></span><br><span class="line">        self.sex=<span class="string">'男'</span></span><br><span class="line">        var=<span class="string">'ok'</span> <span class="comment">#局部变量 没有用对象引用 不是成员变量</span></span><br><span class="line">        <span class="built_in">print</span>(var)  </span><br><span class="line">    def setname(self,name):</span><br><span class="line">        self.name=name</span><br><span class="line">    def getname(self):</span><br><span class="line">        <span class="built_in">return</span> self.name   </span><br><span class="line">    def setage(self,age):</span><br><span class="line">        self.age=age</span><br><span class="line">    def getage(self):</span><br><span class="line">        <span class="built_in">return</span> self.age         </span><br><span class="line">    <span class="comment"># def show(self):</span></span><br><span class="line">    <span class="comment">#     print(self.name,self.age,self.sex)</span></span><br><span class="line">p1=Person()<span class="comment">#默认调用init</span></span><br><span class="line">p1.setname(<span class="string">'sadf'</span>)</span><br><span class="line">p2=Person()<span class="comment">#默认调用init</span></span><br><span class="line">p2.setname(<span class="string">'slki'</span>)</span><br><span class="line"><span class="comment"># print(p.getname()) </span></span><br><span class="line"><span class="comment"># p.setage(21)</span></span><br><span class="line"><span class="comment"># print(p.getage())</span></span><br><span class="line"><span class="built_in">print</span>(p1.name)</span><br><span class="line"><span class="built_in">print</span>(p2.name)</span><br><span class="line"><span class="built_in">print</span>(var)  <span class="comment">#name 'var' is not defined  不能在函数外调用</span></span><br><span class="line">del p1</span><br><span class="line">del p2</span><br><span class="line"><span class="built_in">print</span>(Person.num)</span><br><span class="line"></span><br><span class="line">class Person:</span><br><span class="line">    num=12</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.name=<span class="string">'tom'</span></span><br><span class="line">        self.__age=21</span><br><span class="line">    def show(self):</span><br><span class="line">        <span class="built_in">print</span>(self.name)</span><br><span class="line">    def getAge(self):      <span class="comment">#用函数封装函数</span></span><br><span class="line">        <span class="built_in">return</span> self.__age</span><br><span class="line"></span><br><span class="line">p=Person()</span><br><span class="line"><span class="comment"># p.show() </span></span><br><span class="line"><span class="comment"># print(p.name)  </span></span><br><span class="line"><span class="built_in">print</span>(p.getAge())     <span class="comment">#只能通过函数调用，不能直接用类调用</span></span><br></pre></td></tr></table></figure>
+<h3 id="person"><a href="#person" class="headerlink" title="person"></a>person</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">class Person:</span><br><span class="line">    def __init__(self,name,age,sex,address):</span><br><span class="line">        self.__name=name</span><br><span class="line">        self.__age=age</span><br><span class="line">        self.__sex=sex</span><br><span class="line">        self.__address=address</span><br><span class="line">    def setname(self,name):</span><br><span class="line">        self.__name=name</span><br><span class="line">    def getname(self):</span><br><span class="line">        <span class="built_in">return</span> self.__name    </span><br><span class="line">    def setage(self,age):</span><br><span class="line">        self.__age=age  </span><br><span class="line">    def getage(self):</span><br><span class="line">        <span class="built_in">return</span> self.__age   </span><br><span class="line">    def setsex(self,sex):</span><br><span class="line">        self.__sex=sex</span><br><span class="line">    def getsex(self):</span><br><span class="line">        <span class="built_in">return</span> self.__sex </span><br><span class="line">    def setaddress(self,address):</span><br><span class="line">        self.__address=address</span><br><span class="line">    def getaddress(self):</span><br><span class="line">        <span class="built_in">return</span> self.__address   </span><br><span class="line"></span><br><span class="line">from lesson23 import Person</span><br><span class="line">def addPerson(person):</span><br><span class="line">    dic[person.getname()]=person</span><br><span class="line">def removePerson(name):</span><br><span class="line">    dic.pop(name)</span><br><span class="line">def modifyPerson(name,person):</span><br><span class="line">    dic[name]=person  </span><br><span class="line">def findallPerson(dic):</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> dic.keys():</span><br><span class="line">        person=dic[item]</span><br><span class="line">        <span class="built_in">print</span>(item,person.getname(),person.getage(),person.getsex(),person.getaddress())    </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    dic=&#123;&#125;    </span><br><span class="line">    tom=Person(<span class="string">'tom'</span>,21,<span class="string">'男'</span>,<span class="string">'郑州'</span>)</span><br><span class="line">    jack=Person(<span class="string">'jack'</span>,22,<span class="string">'男'</span>,<span class="string">'上海'</span>)</span><br><span class="line">    addPerson(jack)</span><br><span class="line">    addPerson(tom)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'------添加后结果---------'</span>)</span><br><span class="line">    findallPerson(dic)</span><br><span class="line">    removePerson(tom.getname())</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'------删除后结果---------'</span>)</span><br><span class="line">    findallPerson(dic)</span><br><span class="line">    jack.setsex(<span class="string">'女'</span>)</span><br><span class="line">    jack.setage(23)</span><br><span class="line">    modifyPerson(jack.getname(),jack)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'------修改后结果---------'</span>)</span><br><span class="line">    findallPerson(dic)</span><br></pre></td></tr></table></figure>
+<h3 id="购物车"><a href="#购物车" class="headerlink" title="购物车"></a>购物车</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br></pre></td><td class="code"><pre><span class="line">class Car:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.__goodstotal = 0</span><br><span class="line">        self.__goodsnum = 0</span><br><span class="line">        self.__carlist = []</span><br><span class="line"></span><br><span class="line">    def setGoodsTotal(self, goodstotal):</span><br><span class="line">        self.__goodstotal = goodstotal</span><br><span class="line"></span><br><span class="line">    def getGoodsTotal(self):</span><br><span class="line">        <span class="built_in">return</span> self.__goodstotal</span><br><span class="line"></span><br><span class="line">    def setGoodsNum(self, goodsnum):</span><br><span class="line">        self.__goodsnum = goodsnum</span><br><span class="line"></span><br><span class="line">    def getGoodsNum(self):</span><br><span class="line">        <span class="built_in">return</span> sum([item.getNum() <span class="keyword">for</span> item <span class="keyword">in</span> self.__carlist])</span><br><span class="line"></span><br><span class="line">    def setCarList(self, carlist):</span><br><span class="line">        self.__carlist = carlist</span><br><span class="line"></span><br><span class="line">    def getCarList(self):</span><br><span class="line">        <span class="built_in">return</span> self.__carlist</span><br><span class="line"></span><br><span class="line">    def addGoods(self, goods):    </span><br><span class="line">        flag = False</span><br><span class="line">        <span class="keyword">if</span> self.__carlist != []:</span><br><span class="line">            <span class="comment"># if goods.getNo() in [item.getNo() for item in self.__carlist]:</span></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> self.__carlist:</span><br><span class="line">                <span class="keyword">if</span> i.getNo() == goods.getNo():</span><br><span class="line">                    num = goods.getNum()+ i.getNum()</span><br><span class="line">                    i.setNum(num)</span><br><span class="line">                    flag = True</span><br><span class="line">                    <span class="built_in">break</span></span><br><span class="line">            <span class="keyword">if</span> not flag:</span><br><span class="line">               </span><br><span class="line">                </span><br><span class="line">                self.__carlist.append(goods)</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            </span><br><span class="line">            self.__carlist.append(goods)</span><br><span class="line">       </span><br><span class="line"></span><br><span class="line">    def removeGoods(self, goodsno):</span><br><span class="line">        <span class="keyword">if</span> self.__carlist != []:</span><br><span class="line">            <span class="keyword">for</span> item <span class="keyword">in</span> self.__carlist:</span><br><span class="line">                <span class="keyword">if</span> goodsno == item.getNo():</span><br><span class="line">                    self.__carlist.remove(item)</span><br><span class="line">                    <span class="built_in">break</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'购物车为空！'</span>)</span><br><span class="line"></span><br><span class="line">    def clearCar(self):</span><br><span class="line">        <span class="keyword">if</span> self.__carlist != []:</span><br><span class="line">            self.__carlist.clear()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'购物车为空！'</span>)</span><br><span class="line">    </span><br><span class="line">    def findAll(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'商品编号  商品名称  商品单价  商品数量  商品产地  描述  商品总价'</span>)</span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> self.__carlist:</span><br><span class="line">            </span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'&#123;0:6s&#125; &#123;1:10s&#125; &#123;2:4d&#125; &#123;3:4d&#125; &#123;4:10s&#125; &#123;5:20s&#125; &#123;6:4d&#125;'</span>.format(item.getNo(), \</span><br><span class="line">            item.getName(), item.getPrice(), item.getNum(), item.getAddress(), \</span><br><span class="line">            item.getDesc(), item.getTotal()))</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'商品总量：&#123;0:4d&#125; 商品总金额：&#123;1:6d&#125;'</span>.format(self.getGoodsNum(), self.getAllGoodsPrice()))</span><br><span class="line"></span><br><span class="line">    def getAllGoodsPrice(self):</span><br><span class="line">        <span class="comment"># reduce(lambda x,y:x.getTotal()+y.getTotal(), self.__carlist)</span></span><br><span class="line">       </span><br><span class="line">        <span class="built_in">return</span> sum([item.getTotal() <span class="keyword">for</span> item <span class="keyword">in</span> self.__carlist])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Goods:</span><br><span class="line">    def __init__(self, no, name, price, address, desc, num):</span><br><span class="line">        self.__no = no</span><br><span class="line">        self.__name = name</span><br><span class="line">        self.__price = price</span><br><span class="line">        self.__address = address</span><br><span class="line">        self.__desc = desc</span><br><span class="line">        self.__num = num</span><br><span class="line"></span><br><span class="line">    def getNo(self):</span><br><span class="line">        <span class="built_in">return</span> self.__no</span><br><span class="line"></span><br><span class="line">    def setName(self, name):</span><br><span class="line">        self.__name = name</span><br><span class="line"></span><br><span class="line">    def getName(self):</span><br><span class="line">        <span class="built_in">return</span> self.__name</span><br><span class="line"></span><br><span class="line">    def setPrice(self, price):</span><br><span class="line">        self.__price = price</span><br><span class="line"></span><br><span class="line">    def getPrice(self):</span><br><span class="line">        <span class="built_in">return</span> self.__price</span><br><span class="line"></span><br><span class="line">    def setAddress(self, address):</span><br><span class="line">        self.__address = address</span><br><span class="line"></span><br><span class="line">    def getAddress(self):</span><br><span class="line">        <span class="built_in">return</span> self.__address</span><br><span class="line"></span><br><span class="line">    def setNum(self, num):</span><br><span class="line">        self.__num = num</span><br><span class="line"></span><br><span class="line">    def getNum(self):</span><br><span class="line">        <span class="built_in">return</span> self.__num</span><br><span class="line"></span><br><span class="line">    def setDesc(self, desc):</span><br><span class="line">        self.__desc = desc</span><br><span class="line"></span><br><span class="line">    def getDesc(self):</span><br><span class="line">        <span class="built_in">return</span> self.__desc</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 计算商品总价</span></span><br><span class="line">    def getTotal(self):</span><br><span class="line">        <span class="built_in">return</span> self.__price * self.__num</span><br><span class="line"></span><br><span class="line">from lessson24 import Goods</span><br><span class="line">from car import Car</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    tv = Goods(<span class="string">'10001'</span>, <span class="string">'小米智能电视'</span>, 2999, <span class="string">'北京'</span>, <span class="string">'这是一款智能电视，4K屏，高清，数字'</span>,2)</span><br><span class="line">    sofa = Goods(<span class="string">'10002'</span>, <span class="string">'芝华士头等舱'</span>, 8999, <span class="string">'广州'</span>, <span class="string">'这是一款功能沙发，提供按摩功能'</span>, 1)</span><br><span class="line">    tv2 = Goods(<span class="string">'10001'</span>, <span class="string">'小米智能电视'</span>, 2999, <span class="string">'北京'</span>, <span class="string">'这是一款智能电视，4K屏，高清，数字'</span>,1)</span><br><span class="line">    sofa2 = Goods(<span class="string">'10002'</span>, <span class="string">'芝华士头等舱'</span>, 8999, <span class="string">'广州'</span>, <span class="string">'这是一款功能沙发，提供按摩功能'</span>, 1)</span><br><span class="line">    tv3 = Goods(<span class="string">'10001'</span>, <span class="string">'小米智能电视'</span>, 2999, <span class="string">'北京'</span>, <span class="string">'这是一款智能电视，4K屏，高清，数字'</span>,4)</span><br><span class="line">    goods_car = Car()</span><br><span class="line"></span><br><span class="line">    goods_car.addGoods(tv)</span><br><span class="line">    goods_car.addGoods(tv2)</span><br><span class="line">    goods_car.addGoods(tv3)</span><br><span class="line">    goods_car.addGoods(sofa)</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    <span class="comment"># goods_car.addGoods(sofa2)</span></span><br><span class="line"></span><br><span class="line">     </span><br><span class="line">    goods_car.findAll()</span><br><span class="line">    <span class="comment"># goods_car.clearCar()</span></span><br><span class="line">    <span class="comment"># goods_car.clearCar()</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#goods_car.removeGoods(tv.getNo())</span></span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/fighting7/" class="archive-article-date">
-  	<time datetime="2018-07-18T10:50:46.126Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/fighting7/">集合、组合数据类型习题</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/06/fighting17/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/fighting6/" class="archive-article-date">
-  	<time datetime="2018-07-18T00:31:19.529Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/03/fighting16/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">模块</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/fighting6/">字典数据类型</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/16/fighting5/" class="archive-article-date">
-  	<time datetime="2018-07-16T08:03:47.289Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/16/fighting5/">测试题</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/模板/" class="archive-article-date">
-  	<time datetime="2018-07-14T00:54:43.616Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/模板/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/fighting4/" class="archive-article-date">
-  	<time datetime="2018-07-14T00:33:00.317Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/fighting4/">组合数据类型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/fighting3/" class="archive-article-date">
-  	<time datetime="2018-07-12T05:46:02.105Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/fighting3/">循环语句</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/fighting2/" class="archive-article-date">
-  	<time datetime="2018-07-12T05:36:14.919Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/fighting2/">条件语句</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/fighting1/" class="archive-article-date">
-  	<time datetime="2018-07-12T04:56:37.304Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/fighting1/">字符串</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/11/fighting/" class="archive-article-date">
-  	<time datetime="2018-07-11T14:17:10.502Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/11/fighting/">基础语法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/09/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-09T12:19:21.439Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-    </nav>
   
 
 
@@ -469,8 +337,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
