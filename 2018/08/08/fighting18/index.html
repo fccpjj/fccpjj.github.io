@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 蓝桉</title>
+  <title>面向对象（继承、封装、多态） | 蓝桉</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="Python、爬虫、web开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蓝桉">
-<meta property="og:url" content="http://yoursite.com/archives/page/2/index.html">
+  <meta name="description" content="Python中对象创建的流程1、Python创建一个对象，首先要调用new方法，用来创建并返回一个对象。通常，Python中不需要我们直接显示调用，它会默认调用object.new()方法2、然后，调用init方法，对该对象进行初始化。 析构函数：12341、析构函数与构造函数一样，都是Python中特殊的函数。2、析构函数如果用户没有定义的话，Python会提供一个默认的析构函数3、析构函数__">
+<meta name="keywords" content="Python、爬虫、web开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面向对象（继承、封装、多态）">
+<meta property="og:url" content="http://yoursite.com/2018/08/08/fighting18/index.html">
 <meta property="og:site_name" content="蓝桉">
+<meta property="og:description" content="Python中对象创建的流程1、Python创建一个对象，首先要调用new方法，用来创建并返回一个对象。通常，Python中不需要我们直接显示调用，它会默认调用object.new()方法2、然后，调用init方法，对该对象进行初始化。 析构函数：12341、析构函数与构造函数一样，都是Python中特殊的函数。2、析构函数如果用户没有定义的话，Python会提供一个默认的析构函数3、析构函数__">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-08T11:53:35.495Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蓝桉">
+<meta name="twitter:title" content="面向对象（继承、封装、多态）">
+<meta name="twitter:description" content="Python中对象创建的流程1、Python创建一个对象，首先要调用new方法，用来创建并返回一个对象。通常，Python中不需要我们直接显示调用，它会默认调用object.new()方法2、然后，调用init方法，对该对象进行初始化。 析构函数：12341、析构函数与构造函数一样，都是Python中特殊的函数。2、析构函数如果用户没有定义的话，Python会提供一个默认的析构函数3、析构函数__">
   
     <link rel="alternative" href="/atom.xml" title="蓝桉" type="application/atom+xml">
   
@@ -157,295 +161,160 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-fighting18" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      面向对象（继承、封装、多态）
+    </h1>
+  
+
+        
+        <a href="/2018/08/08/fighting18/" class="archive-article-date">
+  	<time datetime="2018-08-08T11:47:05.392Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-08</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Python中对象创建的流程<br>1、Python创建一个对象，首先要调用<strong>new</strong>方法，用来创建并返回一个对象。通常，Python中不需要我们直接显示调用，它会默认调用object.<strong>new</strong>()方法<br>2、然后，调用<strong>init</strong>方法，对该对象进行初始化。</p>
+<h3 id="析构函数："><a href="#析构函数：" class="headerlink" title="析构函数："></a>析构函数：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1、析构函数与构造函数一样，都是Python中特殊的函数。</span><br><span class="line">2、析构函数如果用户没有定义的话，Python会提供一个默认的析构函数</span><br><span class="line">3、析构函数__del__(self)，作用用来释放掉对象所占用的内存空间，在Python回收对象空间之前自动被执行。</span><br><span class="line">4、通常在析构函数中，主要是将对象中占用大量资源的变量进行手动的释放，便于后续Python解释器去回收这些内存空间。</span><br></pre></td></tr></table></figure>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">1）Python中能够实现单继承与多继承。</span><br><span class="line">单继承：就是子类只有一个直接父类。</span><br><span class="line">多继承：子类有两个及两个以上的直接父类。</span><br><span class="line">2）子类继承父类，子类可以继承父类的相关特征。子类继承了父类的方法，如果在多继承情况下，父类出现同名函数，那么子类继承该函数时，根据继承的顺序进行调用。</span><br><span class="line">3）super()函数，它指代了当前类的父类。我们可以在子类中调用super函数，用来初始化父类。但是使用super()调用父类的构造函数时，只能对多继承中的第一个父类生效。</span><br><span class="line">4)抽象与继承的区别与关系</span><br><span class="line">抽象：指对同一类别事物的相似部分进行抽取。抽象我们认为是对具体化对象的相关行为和属性的泛化过程。</span><br><span class="line">继承：Python中我们通常认为类就是一个抽象的内容。类本身并不能直接执行，需要通过继承，进行对象的实例化，进而获得具体的对象本身，才能执行相关的功能。</span><br><span class="line">也就是说继承其实是抽象的具体化过程。</span><br><span class="line"></span><br><span class="line">5）多继承中，当一个子类继承多个父类时，我们需要如下声明：</span><br><span class="line">class SubClass(A,B):</span><br><span class="line">其中，A、B是SubClass的父类。那么，如果我们分为两种个情况：</span><br><span class="line">第一，子类中没有显式的定义__init__()，那么在实例化子类时调用其父类的构造函数。如果有多个类，都定义了__init()函数，那么它会调用第一个具有__init__()函数的父类。</span><br><span class="line">第二，子类中显式的定义理论__init_(),那么实例化子类时不再调用父类的构造函数。此时，如果我们要调用父类的构造函数，有两种方法。</span><br><span class="line">1）在子类的构造函数中，显式的调用对应父类的构造函数，例如：</span><br><span class="line">A.__init__()</span><br><span class="line">2)采用super()函数，super().__init__()或者super(子类，self).__init__()</span><br><span class="line">但是如果遇到其多个父类，他们的构造函数同名时，我们根据他们在MRO中的顺序，分别调用他们，例如：</span><br><span class="line">class SubClass(B, A):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        super().__init__()   <span class="comment"># 此处调用了父类B</span></span><br><span class="line">        super(B, self).__init__() <span class="comment">#此处调用了父类C</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'我是子类'</span>)</span><br><span class="line">注意，在这里不要看到super就认为是父类，但是在多继承时，实际上super指的是MRO中的下一个类。</span><br></pre></td></tr></table></figure>
+<h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">在Python中，我们针对其内部细节进行封装。通常我们将属性定义为私有类型，意味着在类外无法直接访问。可以通过相关的方法对其进行调用。</span><br><span class="line">私有的成员变量和方法，都需要在类内进行定义。所有在类外实现的定义都是公有的，代码如下：</span><br><span class="line">class A:</span><br><span class="line">    __N = <span class="string">'hello'</span>      <span class="comment"># 此处是一个私有的类变量</span></span><br><span class="line"></span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.__name = <span class="string">'tom'</span></span><br><span class="line"></span><br><span class="line">    def __method(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'我是私有函数'</span>)</span><br><span class="line"></span><br><span class="line">    def show(self):</span><br><span class="line">        self.__method()</span><br><span class="line">        <span class="built_in">print</span>(self.__name)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">a = A()</span><br><span class="line">A.__age = 10       <span class="comment"># 此处的__age是一个公有的类变量</span></span><br><span class="line"><span class="built_in">print</span>(A.__age)</span><br></pre></td></tr></table></figure>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line">property方法</span><br><span class="line">在Python中，我们可以使用property来修饰指定的函数，被修饰后的函数，在类外可以通过对象调用（类似调用变量）</span><br><span class="line"></span><br><span class="line">class Person:</span><br><span class="line">    def __init__(self, name, height, weight):</span><br><span class="line">        self.__name = name</span><br><span class="line">        self.__height = height</span><br><span class="line">        self.__weight = weight</span><br><span class="line">    </span><br><span class="line">    @property</span><br><span class="line">    def bmi(self):</span><br><span class="line">        <span class="built_in">return</span> self.__weight / self.__height**2</span><br><span class="line"></span><br><span class="line">p = Person()</span><br><span class="line"><span class="built_in">print</span>(p.bmi)  <span class="comment"># 此处调用的bmi是Person类中的函数。</span></span><br><span class="line">原理：当类被载入时，首先会载入类的名称和被property修饰的名字到类的命名空间中；然后在类对象进行实例化时，Python解析器会查找是否存在property修饰的名字，如果存在，就不在实例化对象是为其分配内存空间。</span><br><span class="line">9）classmethod方法</span><br><span class="line">在Python中，我们通常使用classmethod用来修饰一个方法，这个方法就被称为类方法，类方法通常用来操作类变量。类方法和类变量一样，都需要通过类名来调用。</span><br><span class="line">class Goods:</span><br><span class="line">    __discount = 0.8</span><br><span class="line"></span><br><span class="line">    def __init__(self, name, price):</span><br><span class="line">        self.__name = name</span><br><span class="line">        self.__price = price</span><br><span class="line"></span><br><span class="line">    @classmethod</span><br><span class="line">    def change_discount(cls, new_discount): <span class="comment">#此处传递的默认参数不是对象参数self，而是类参数cls</span></span><br><span class="line">        cls.__discount = new_discount</span><br><span class="line">    </span><br><span class="line">    @classmethod</span><br><span class="line">    def get_discount(cls):</span><br><span class="line">        <span class="built_in">return</span> cls.__discount</span><br><span class="line"></span><br><span class="line">goods = Goods(<span class="string">'apple'</span>, 6)</span><br><span class="line"><span class="built_in">print</span>(Goods.get_discount())</span><br><span class="line">Goods.change_discount(0.9)</span><br><span class="line"><span class="built_in">print</span>(Goods.get_discount())</span><br><span class="line">10)staticmethod方法</span><br><span class="line">在Python中，我们使用staticmethod来修饰函数，该函数被称为静态方法，首先，静态方法不需要使用对象参数或类参数作为默认参数。其次，静态方法通常只能调用类变量，而不可以使用成员变量。最后，在类外进行调用时，可以使用类名来调用。</span><br><span class="line"></span><br><span class="line">实例方法、类方法与静态方法的区别</span><br><span class="line">实例方法：第一个参数必须是实例对象（self）,通过它来传递实例的属性和方法，只能由实例对象来调用。</span><br><span class="line">类方法：使用装饰器@classmethod，第一个参数必须是类对象（cls）,通过它来传递类的属性和方法。可以通过实例对象或类对象来调用，通常使用类对象调用。</span><br><span class="line">静态方法：使用装饰器@staticmethod,没有默认参数（self和cls），但是方法体中不能使用类或实例对象的任何属性和方法。可以通过实例对象或类对象进行调用。</span><br><span class="line"></span><br><span class="line">1、类方法和静态方法都可以通过对象实例或者类名来调用。</span><br><span class="line">2、类方法主要针对的是类，可以通过继承和重新定义</span><br><span class="line">3、静态方法不能被继承，无法被重写，可以被认为是全局函数。静态方法在使用时完全不会用到对象实例本身。静态方法逻辑上属于类，但是不会涉及到类中的属性和方法的操作。</span><br><span class="line"></span><br><span class="line">11）方法重写</span><br><span class="line">概念：当子类继承父类时，子类会继承父类所有的公有方法。如果在子类中重写定义一个与父类中同名的方法，我们成为方法的重写（覆盖）。方法重写只需要名字相同即可，与方法的参数个数、顺序无关</span><br><span class="line">12）多态与鸭子类型</span><br><span class="line">多态：多态一般都是通过继承来实现的，也就是根据不同的对象形态来进行区分。我们在Python中，使用多态时，意味着在编码时变量并不知道所引用的对象具体内容，只有在程序运行时相关对象被实例化后，才能够确定。</span><br><span class="line">鸭子类型：在Python中，因为其自身特性并没有对多态进行明确的规定，可以创建一个功能相似，但与原对象无关的、全新对象，来实现程序的松耦合。</span><br><span class="line">我们通常在开发中，采用接口的方式来实现。</span><br><span class="line">我们认为在一组功能相似，但没有继承关系的对象中，采用接口方式。</span><br><span class="line">class Payment:</span><br><span class="line">    def payment(self, money):</span><br><span class="line">        pass</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Weixinpay(Payment):</span><br><span class="line">    def payment(self, money):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'微信支付了&#123;0&#125;元'</span>.format(money))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Alipay(Payment):</span><br><span class="line">    def payment(self, money):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'支付宝支付了&#123;0&#125;元'</span>.format(money))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class My(Payment):</span><br><span class="line">    def payment(self, money):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'支付了&#123;0&#125;元'</span>.format(money))</span><br><span class="line"></span><br><span class="line">此例，我们可以看到：</span><br><span class="line">第一，通过继承，实现了多态，即三种支付方式不同的形态</span><br><span class="line">第二，我们观察到，微信支付、支付宝、个人支付，三者之间没有任何继承关系，但是都具有相同的支付功能，我们可以认为这种形式就是鸭子类型</span><br><span class="line">第三，因为三种支付方式，分别继承了接口类Payment，都重新了相关的支付方法payment()</span><br><span class="line"></span><br><span class="line">运算符重载</span><br><span class="line">1、__getitem__：索引迭代</span><br><span class="line">在Python，可迭代化对象在使用循环迭代时，都会默认的调用__iter__,如果没有next()方法，会调用__getitem__方法。</span><br></pre></td></tr></table></figure>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br></pre></td><td class="code"><pre><span class="line">class Person:</span><br><span class="line">    def __init__(self,name,height,weight):</span><br><span class="line">        self.__name=name</span><br><span class="line">        self.__height=height</span><br><span class="line">        self.__weight=weight</span><br><span class="line">    @property    </span><br><span class="line">    def bmi(self):</span><br><span class="line">        <span class="built_in">return</span> self.__weight / self.__height**2</span><br><span class="line"><span class="built_in">print</span>(Person.bmi)</span><br><span class="line">p1=Person(<span class="string">'smith'</span>,170,78)        </span><br><span class="line">p2=Person(<span class="string">'tom'</span>,180,80)</span><br><span class="line"><span class="built_in">print</span>(p1.bmi) </span><br><span class="line"><span class="built_in">print</span>(p2.bmi)   </span><br><span class="line"></span><br><span class="line">class Person:</span><br><span class="line">    def __init__(self,name):</span><br><span class="line">        self.__name=name</span><br><span class="line">    @property    </span><br><span class="line">    def name(self):</span><br><span class="line">        <span class="built_in">return</span> self.__name</span><br><span class="line">    def set_name(self,new_name):</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">type</span>(new_name) is str:</span><br><span class="line">            self.__name=new_name</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'提供的姓名数据类型不合法'</span>)        </span><br><span class="line">p=Person(<span class="string">'sam'</span>)  </span><br><span class="line"><span class="built_in">print</span>(p.name)      </span><br><span class="line">p.set_name(<span class="string">'tom'</span>)</span><br><span class="line"><span class="built_in">print</span>(p.name)  </span><br><span class="line"></span><br><span class="line">class Person:</span><br><span class="line">    def __init__(self,name):</span><br><span class="line">        self.__name=name</span><br><span class="line">    @property    </span><br><span class="line">    def name(self):</span><br><span class="line">        <span class="built_in">return</span> self.__name</span><br><span class="line">    @name.setter    </span><br><span class="line">    def name(self,new_name):</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">type</span>(new_name) is str:</span><br><span class="line">            self.__name=new_name</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'提供的姓名数据类型不合法'</span>)        </span><br><span class="line">p=Person(<span class="string">'sam'</span>)  </span><br><span class="line"><span class="built_in">print</span>(p.name)      </span><br><span class="line">p.name=<span class="string">'tom'</span></span><br><span class="line"><span class="built_in">print</span>(p.name)    </span><br><span class="line"></span><br><span class="line">class Person:</span><br><span class="line">    def __init__(self,name,password):  <span class="comment">#不能传两个参数</span></span><br><span class="line">        self.__name=name</span><br><span class="line">        self.__password=password</span><br><span class="line">    @property    </span><br><span class="line">    def name(self):</span><br><span class="line">        <span class="built_in">return</span> self.__name+self.__password</span><br><span class="line">    @name.setter    </span><br><span class="line">    def name(self,new_name,new_password):</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">type</span>(new_name) is str:</span><br><span class="line">            self.__name=new_name</span><br><span class="line">            self.__password=new_password</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'提供的姓名数据类型不合法'</span>)        </span><br><span class="line">p=Person(<span class="string">'sam'</span>,<span class="string">'1234'</span>)  </span><br><span class="line"><span class="built_in">print</span>(p.name)      </span><br><span class="line">p.name=<span class="string">'tom'</span></span><br><span class="line"></span><br><span class="line">class Oil:</span><br><span class="line">    def __init__(self,name,price,money):</span><br><span class="line">        self.__name=name</span><br><span class="line">        self.__price=price</span><br><span class="line">        self.money=money</span><br><span class="line">        self.a=0</span><br><span class="line">    @property</span><br><span class="line">    def L1(self):</span><br><span class="line">        <span class="built_in">return</span> self.a/self.__price   </span><br><span class="line">    @L1.setter</span><br><span class="line">    def L1(self,raise1):</span><br><span class="line">        <span class="keyword">if</span> raise1&gt;=1000 and raise1&lt;2000:</span><br><span class="line">            self.a=raise1+100</span><br><span class="line">        <span class="keyword">elif</span> raise1&gt;=2000:</span><br><span class="line">            self.a=raise1+200</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.a=raise1</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">oil1=Oil(<span class="string">'92号'</span>,7.45,1000)  </span><br><span class="line">oil2=Oil(<span class="string">'95号'</span>,8.10,2000)</span><br><span class="line">oil1.L1=1000</span><br><span class="line">oil2.L1=2000</span><br><span class="line"><span class="built_in">print</span>(oil1.L1)</span><br><span class="line"><span class="built_in">print</span>(oil2.L1)</span><br><span class="line"></span><br><span class="line">class Myclass:</span><br><span class="line">    __num=0</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.__name=<span class="string">''</span></span><br><span class="line">    @classmethod    </span><br><span class="line">    def addNum(cls):</span><br><span class="line">        cls.__num+=1</span><br><span class="line">    @classmethod   </span><br><span class="line">    def getNum(cls):   </span><br><span class="line">        <span class="built_in">return</span> cls.__num</span><br><span class="line">    def __new__(self):</span><br><span class="line">        Myclass.addNum()</span><br><span class="line">        <span class="built_in">return</span> super(Myclass,self).__new__(self)    </span><br><span class="line">class Student(Myclass):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.name=<span class="string">''</span>  <span class="comment">#name</span></span><br><span class="line">        <span class="comment"># Myclass.addNum()</span></span><br><span class="line">tom=Student()</span><br><span class="line">smith=Student() </span><br><span class="line"><span class="built_in">print</span>(Myclass.getNum())   </span><br><span class="line"></span><br><span class="line">import time</span><br><span class="line">class MyTime(object):</span><br><span class="line">    def __init__(self,hour,minute,second):</span><br><span class="line">        self.__hour=hour</span><br><span class="line">        self.__minute=minute</span><br><span class="line">        self.__second=second</span><br><span class="line">    @staticmethod</span><br><span class="line">    def showTime():</span><br><span class="line">        <span class="built_in">return</span> time.strftime(<span class="string">'%H:%M:%S'</span>,time.localtime())</span><br><span class="line"><span class="built_in">print</span>(MyTime.showTime())</span><br><span class="line">t=MyTime(18, 4, 21)</span><br><span class="line"><span class="built_in">print</span>(t.showTime()) </span><br><span class="line"></span><br><span class="line">class Superclass():</span><br><span class="line">    def __init__(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'父类构造函数'</span>)       </span><br><span class="line">    def show(self,num):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'父类方法'</span>+num)</span><br><span class="line">class Subclass(Superclass):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'子类构造函数'</span>)</span><br><span class="line">    def show(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'子类方法'</span>)   </span><br><span class="line">sub=Subclass()</span><br><span class="line">sub.show()         </span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">class Animal:</span><br><span class="line">    def eat(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'Animal is eatting'</span>)</span><br><span class="line">class Dog(Animal):</span><br><span class="line">    def eat(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'Dog is eatting'</span>)</span><br><span class="line">class Cat(Animal):</span><br><span class="line">    def eat(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'Cat is eatting'</span>)   </span><br><span class="line">def eatting_double(animal):</span><br><span class="line">    animal.eat()</span><br><span class="line">animal=Animal()</span><br><span class="line">dog=Dog()</span><br><span class="line">cat=Cat()</span><br><span class="line">eatting_double(animal)</span><br><span class="line">eatting_double(dog)</span><br><span class="line">eatting_double(cat)                         </span><br><span class="line"></span><br><span class="line">class Payment():</span><br><span class="line">    def payment(self,money):</span><br><span class="line">        pass</span><br><span class="line">class Weixinpay(Payment):</span><br><span class="line">    def payment(self,money):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'微信支付了&#123;&#125;元'</span>.format(money))</span><br><span class="line">class Alipay(Payment):</span><br><span class="line">    def payment(self,money):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'支付宝支付了&#123;&#125;'</span>.format(money))</span><br><span class="line">class My(Payment):</span><br><span class="line">    def payment(self,money):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'支付了&#123;&#125;元'</span>.format(money))       </span><br><span class="line"></span><br><span class="line">alipay=Alipay()</span><br><span class="line">alipay.payment(1000)</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/fighting8/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:58:04.434Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/fighting8/">高级特性</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/08/fighting18/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/fighting7/" class="archive-article-date">
-  	<time datetime="2018-07-18T10:50:46.126Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/06/fighting17/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">面向对象</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/fighting7/">集合、组合数据类型习题</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/fighting6/" class="archive-article-date">
-  	<time datetime="2018-07-18T00:31:19.529Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/fighting6/">字典数据类型</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/16/fighting5/" class="archive-article-date">
-  	<time datetime="2018-07-16T08:03:47.289Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/16/fighting5/">测试题</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/模板/" class="archive-article-date">
-  	<time datetime="2018-07-14T00:54:43.616Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/模板/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/fighting4/" class="archive-article-date">
-  	<time datetime="2018-07-14T00:33:00.317Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/fighting4/">组合数据类型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/fighting3/" class="archive-article-date">
-  	<time datetime="2018-07-12T05:46:02.105Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/fighting3/">循环语句</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/fighting2/" class="archive-article-date">
-  	<time datetime="2018-07-12T05:36:14.919Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/fighting2/">条件语句</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/fighting1/" class="archive-article-date">
-  	<time datetime="2018-07-12T04:56:37.304Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/fighting1/">字符串</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/11/fighting/" class="archive-article-date">
-  	<time datetime="2018-07-11T14:17:10.502Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/11/fighting/">基础语法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/3/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -469,8 +338,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
